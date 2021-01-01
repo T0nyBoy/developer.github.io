@@ -1,0 +1,57 @@
+.aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80vw;
+  min-width: 300px;
+  height: auto;
+  margin-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8em;
+  padding: 1em 5em;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #cacaca;
+  color: #323330;
+  -webkit-box-shadow: 2em 2em 0px #67616e, -2em -2em 0px #5a5560, -4em 4em 0px #4d4952;
+          box-shadow: 2em 2em 0px #67616e, -2em -2em 0px #5a5560, -4em 4em 0px #4d4952;
+}
+
+.aboutContainer p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.forImage {
+  width: 120px;
+  float: left;
+  margin: 1em;
+  padding: 1em;
+  border: 8px solid #323330;
+  border-radius: 1.7em;
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 400px) {
+  .aboutContainer {
+    width: 100vw;
+    padding: 1em 2em;
+  }
+}
+
+@media (max-width: 580px) {
+  .forImage {
+    float: none;
+  }
+}
+/*# sourceMappingURL=about.css.map */

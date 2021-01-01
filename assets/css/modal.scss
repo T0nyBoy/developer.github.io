@@ -1,0 +1,111 @@
+// importing a font in css
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+// Setting up the colours
+$colors: (
+    primary: #F0DB4F,
+    secondary: #46344E,
+    third: #5a5560,
+    accent:  #323330,
+    bright: #f0f0f0,
+    //light function (normal css funciton, lightens the color by the % amount)
+    secondary-light: lighten(#46344E, 5%),
+    secondary-dark: darken(#46344E, 5%),
+    third-light: lighten(#5a5560, 5%),
+    third-dark: darken(#5a5560, 5%),
+    accent-light: lighten(#323330, 5%),
+    accent-dark: darken(#323330, 5%),
+    
+    redish: #fb4848,
+    redish-light: lighten(#fb4848, 5%),
+    redish-dark: darken(#fb4848, 5%),
+    greenish: #48a148,
+    greenish-light: lighten(#48a148, 5%),
+    greenish-dark: darken(#48a148, 5%),
+    blueish: #4848fb,
+    blueish-light: lighten(#4848fb, 5%),
+    blueish-dark: darken(#4848fb, 5%)    
+);
+
+
+// color function
+@function color($colorName){
+    @return map-get($colors, $colorName)
+    // ---------------
+    // so whenever we call a call a color we dont need to call map-get($colors...)
+    // we can call color(primary) for example
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #323330ee; /* Black w/ opacity */
+  }
+
+
+  // -----------------------------FOR CONTACT FORM MODAL-----------------------------
+  .contactForm{
+    padding-top: 0; /* Location of contact form box */ 
+  }
+
+  .mainBox{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+  // --------------------------------------------------------------------------------
+
+  /* Modal Content */
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    height: 80vh;
+    box-sizing: border-box;
+    overflow: auto; //hides scroll bars when not needed.
+    padding: 1em;
+
+
+    background-color: color(primary);
+    margin: auto;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: color(secondary);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+
+  .closeContactForm{
+    position: relative;
+    top: 5vh;
+    right: 15vw;
+    color: color(primary);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 200;
+  }
+  
+  .close:hover,
+  .close:focus, .closeContactForm:hover, .closeContactForm:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

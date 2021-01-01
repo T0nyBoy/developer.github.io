@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+.mainBox {
+  width: 530px;
+  height: 530px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 2em auto;
+  background-color: #5a5560;
+  border-radius: 35px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mainBox .leftColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 45%;
+          flex: 0 1 45%;
+  border-radius: 35px 0 0 35px;
+  background-color: #46344E;
+}
+
+.mainBox .leftColumn .logoBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 35px 0 0 0;
+  background-color: #67616e;
+  overflow: visible;
+  color: #46344E;
+  font-family: "Rubik";
+  font-size: 3.2em;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.mainBox .leftColumn .logoBox img {
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.mainBox .leftColumn .otherContactWays {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 2.3em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0 0 0 35px;
+  background-color: #67616e;
+}
+
+.mainBox .leftColumn .otherContactWays span {
+  color: #323330;
+  margin: 0 0.2em;
+  font-size: 1.5em;
+}
+
+.mainBox .mainContactFrame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 55%;
+          flex: 1 1 55%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0 35px 35px 0;
+  background-color: #f0f0f0;
+  border: 8px solid #67616e;
+}
+
+.mainBox .mainContactFrame h1 {
+  color: #46344E;
+  font-weight: 900;
+}
+
+.mainBox .mainContactFrame #contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 0.2em;
+}
+
+.mainBox .mainContactFrame #contactForm #userName, .mainBox .mainContactFrame #contactForm #email, .mainBox .mainContactFrame #contactForm #phone {
+  border: 2px solid #46344E;
+  width: 260px;
+  height: 2.2em;
+  border-radius: 25px;
+  padding-left: 0.7em;
+  font-family: "Rubik";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mainBox .mainContactFrame #contactForm #userName:focus, .mainBox .mainContactFrame #contactForm #email:focus, .mainBox .mainContactFrame #contactForm #phone:focus {
+  -webkit-box-shadow: 0 0 6px #543e5d;
+          box-shadow: 0 0 6px #543e5d;
+}
+
+.mainBox .mainContactFrame #contactForm #message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 260px;
+  border: 2px solid #46344E;
+  border-radius: 8px;
+  padding: 0 0.3em;
+  font-family: "Rubik";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  resize: none;
+  text-overflow: scroll;
+}
+
+.mainBox .mainContactFrame #contactForm #message:focus {
+  -webkit-box-shadow: 0 0 6px #543e5d;
+          box-shadow: 0 0 6px #543e5d;
+}
+
+.mainBox .mainContactFrame #contactForm .robot label {
+  font-size: 0.8em;
+  color: #46344E;
+}
+
+.mainBox .mainContactFrame #contactForm .robot #imRobot {
+  outline: 2px solid #543e5d;
+}
+
+.mainBox .mainContactFrame #contactForm .submitBtn {
+  width: 260px;
+  height: 2em;
+  background-color: #67616e;
+  color: #F0DB4F;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.1em;
+  font-weight: bold;
+  -webkit-transition: background-color 120ms ease-in;
+  transition: background-color 120ms ease-in;
+}
+
+.mainBox .mainContactFrame #contactForm .submitBtn:hover {
+  background-color: #4d4952;
+}
+
+.mainBox .mainContactFrame #contactForm .submitBtn:active {
+  background-color: #543e5d;
+  -webkit-box-shadow: inset 2px 2px 8px darkslategray;
+          box-shadow: inset 2px 2px 8px darkslategray;
+}
+
+.mainBox .mainContactFrame #contactForm input, .mainBox .mainContactFrame #contactForm #submitBtn, .mainBox .mainContactFrame #contactForm #message {
+  margin-bottom: -1em;
+}
+
+@media (max-width: 815px) {
+  .mainBox {
+    width: 90%;
+    max-width: 350px;
+    height: 80vh;
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #46344E;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .mainBox .mainContactFrame {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    border-radius: 0px;
+    width: 100%;
+    max-width: 350px;
+    height: 80vh;
+  }
+  .mainBox .leftColumn {
+    display: none;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 10%;
+            flex: 1 1 10%;
+    background-color: #F0DB4F;
+    height: 60px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .mainBox .leftColumn .logoBox {
+    display: none;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 90%;
+            flex: 1 0 90%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 0px;
+    background-color: #F0DB4F;
+    -webkit-clip-path: 0;
+            clip-path: 0;
+    -webkit-clip-path: none;
+            clip-path: none;
+    font-size: 2em;
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .mainBox .leftColumn .otherContactWays {
+    display: none;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 90%;
+            flex: 0 1 90%;
+    width: 100%;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-bottom: 0.5em;
+    border-radius: 0 0 0 0px;
+    background-color: #67616e;
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
+}
+
+.forError, .forSuccess {
+  font-size: 0.8em;
+  max-width: 340px;
+  min-width: 340px;
+  /* Set a default minimum width */
+  margin-left: -170px;
+  /* Divide value of min-width by 2 */
+  background-color: rgba(255, 93, 93, 0.8);
+  /* Black background color */
+  color: #fff;
+  /* White text color */
+  text-align: center;
+  /* Centered text */
+  border-radius: 8px;
+  /* Rounded borders */
+  padding: 16px 8px;
+  /* Padding */
+  position: fixed;
+  /* Sit on top of the screen */
+  z-index: 1;
+  /* Add a z-index if needed */
+  left: 50%;
+  /* Center the snackbar */
+  top: 0.7em;
+  /* 30px from the bottom */
+}
+
+.forSuccess {
+  max-width: 120px;
+  min-width: 120px;
+  margin-left: -60px;
+  background-color: rgba(0, 216, 194, 0.796);
+  right: 20%;
+}
+/*# sourceMappingURL=contactForm.css.map */

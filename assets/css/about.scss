@@ -1,0 +1,87 @@
+// Setting up the colours
+$colors: (
+    primary: #F0DB4F,
+    secondary: #46344E,
+    third: #5a5560,
+    accent:  #323330,
+    bright: #f0f0f0,
+    //light function (normal css funciton, lightens the color by the % amount)
+    secondary-light: lighten(#46344E, 5%),
+    secondary-dark: darken(#46344E, 5%),
+    third-light: lighten(#5a5560, 5%),
+    third-dark: darken(#5a5560, 5%),
+    accent-light: lighten(#323330, 5%),
+    accent-dark: darken(#323330, 5%),
+    bright-dark: darken(#f0f0f0,15%),
+    
+    redish: #fb4848,
+    redish-trans: #fb4848ce,
+    redish-light: lighten(#fb4848, 5%),
+    redish-dark: darken(#fb4848, 5%),
+    greenish: #48a148,
+    greenish-trans: #48a148ce,
+    greenish-light: lighten(#48a148, 5%),
+    greenish-dark: darken(#48a148, 5%),
+    blueish: #4848fb,
+    blueish-trans: #4848fbce,
+    blueish-light: lighten(#4848fb, 5%),
+    blueish-dark: darken(#4848fb, 5%)
+);
+
+// color function
+@function color($colorName){
+    @return map-get($colors, $colorName)
+    // ---------------
+    // so whenever we call a call a color we dont need to call map-get($colors...)
+    // we can call color(primary) for example
+}
+
+.aboutContainer{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    min-width: 300px;
+    height: auto;
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8em;
+    padding: 1em 5em;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: color(bright-dark);
+    color: color(accent);
+    box-shadow: 2em 2em 0px color(third-light),
+    -2em -2em 0px color(third),
+    -4em 4em 0px color(third-dark);
+
+    p{
+        text-align: justify;
+        text-justify: inter-word;
+    }
+}
+
+.forImage{
+    width: 120px;
+    float: left;
+    margin: 1em;
+    padding: 1em;
+    border: 8px solid color(accent);
+    border-radius: 1.7em;
+    background-color: color(bright);
+}
+
+@media(max-width: 400px){
+    .aboutContainer{
+        width: 100vw;
+        padding: 1em 2em;
+    }
+}
+
+@media(max-width: 580px){
+    .forImage{
+       float: none;
+    }
+}
+

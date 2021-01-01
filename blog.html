@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head></head>
+
+    <body>
+
+        <!-- THE MENU BAR -->
+        <div class="menu"></div>
+        <!-- -------------------------------------------------------------------------------------------- -->
+
+
+        <!-- MAIN BODY -->
+        <div class="blogContainer">
+            <div class="containerDynamic">
+                <div class="topField">
+                    <div class="itemsPerPageContainer">
+                        <label for="itemsPerPage">Items Per Page:  </label>
+                        <select name="itemsPerPage" id="itemsPerPage">
+                            <option value=5>5</option>
+                            <option value=10>10</option>
+                            <option value=20>20</option>
+                            <option value=50>50</option>
+                            <option value=100>100</option>
+                            <option value=200>200</option>
+                        </select>
+                        <button class="updateItemsPerPage">Update</button>
+                    </div>
+    
+                    <div class="searchFields">
+                        <input type="search" class="searchArea">
+                        <button class="searchBtn">Search</button>
+                    </div>
+                </div>
+                
+                <!-- MAIN TABLE WITH RESULTS-->
+                <div class="tabletContent"></div>
+                
+                <!-- PAGINATION -->
+                <div class="forPagination"></div>
+            </div>
+        </div>
+        
+        <!-- -------------------------------------------------------------------------------------------- -->
+
+        
+
+    <!-- CONTACT FORM -->
+        <div class="modal contactForm"></div>
+       <!-- -------------------------------------------------------------------------------------------- -->
+
+
+        <!-- FOOTER -->
+        <div class="footerContainer"></div>
+        <!-- -------------------------------------------------------------------------------------------- -->
+
+        <!-- Arrow Up -->
+        <div class="toTopButton toTopButtonHide">
+            <i class="fas fa-arrow-alt-circle-up"></i>
+        </div>
+
+
+        <script src="/assets/js/blog.js" async defer></script>
+        <script src="/assets/js/parts.js"></script>
+        <script src="/assets/js/menu.js" async defer></script>
+        <script src="/assets/js/modal.js" async defer></script>
+        <script src="/assets/js/contactForm.js" async defer></script>
+    </body>
+</html>

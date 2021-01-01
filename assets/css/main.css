@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+a {
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Rubik";
+  background-color: #f0f0f0;
+}
+
+.mainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  height: 85vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.innerBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25vw;
+  height: 25vw;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+
+.innerBox .innexBoxItems {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.innerBox .innexBoxItems i {
+  font-size: 5vw;
+}
+
+.innerBox .innexBoxItems p {
+  margin: 0;
+  text-align: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: all 00ms ease-in;
+  transition: all 00ms ease-in;
+}
+
+.service1 {
+  background-color: #67616e;
+  color: #F0DB4F;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.service2 {
+  background-color: #5a5560;
+  color: #F0DB4F;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.service3 {
+  background-color: #4d4952;
+  color: #F0DB4F;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.innerBox:hover {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.innerBox:hover i {
+  display: none;
+}
+
+.innerBox:hover p {
+  display: inline;
+  position: relative;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.innerBox:hover .innexBoxItems {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+@media (max-width: 801px) {
+  .mainContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    height: 90vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: static;
+    margin-right: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .innerBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 33%;
+            flex: 1 1 33%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+    min-width: 450px;
+    height: 100%;
+    margin-bottom: 2em;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  .innerBox .innexBoxItems {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .innerBox .innexBoxItems i {
+    font-size: 5vw;
+    display: none;
+  }
+  .innerBox .innexBoxItems p {
+    margin: 0;
+    text-align: justify;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: none;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transition: all 00ms ease-in;
+    transition: all 00ms ease-in;
+  }
+  .innerBox:hover {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    z-index: 10;
+  }
+  .innerBox:hover i {
+    display: none;
+  }
+  .innerBox:hover p {
+    display: none;
+    position: relative;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  .innerBox:hover .innexBoxItems {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+/*# sourceMappingURL=main.css.map */

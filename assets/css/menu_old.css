@@ -1,0 +1,410 @@
+/* General Arangements */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-image: url(simon-fitall-tvleqH3p1os-unsplash.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #323330;
+}
+
+.menu a:link {
+  text-decoration: none;
+  color: #323330;
+}
+
+/* ------------------- */
+/* FOR NORMAL SCREENS */
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 3.2em;
+  margin-bottom: 1em;
+  /* background-color: rgb(24, 136, 193); */
+  color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 1.5em;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* box-shadow: 0px 1px 8px rgb(66, 66, 66); */
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+/* .menuScrolled{
+    background-color: rgba(24, 137, 193, 0.35);
+    text-shadow: 1px 1px 1px grey;
+} */
+/* Scroll JS effect not to work in small screen */
+@media (max-width: 801px) {
+  .menuScrolled {
+    background-color: #1888c1;
+    text-shadow: none;
+  }
+}
+
+/* .menu:hover{
+    background-color: rgb(24, 136, 193);
+    text-shadow: none;
+} */
+.menuItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 1em;
+  height: 100%;
+  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.menuItem:hover {
+  background-color: #827100;
+}
+
+/* Generaly drop-down submenu display is none until we do something
+but for bigger screens we want a transition to be aaplied */
+/* make hover effect for submenu appear only on bigger screens */
+@media (min-width: 801px) {
+  .submenuContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    padding: 0.4em 0.4em;
+    list-style-type: none;
+    position: absolute;
+    top: 3.2em;
+    background-color: #827100;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    -webkit-box-shadow: 0px 2px 8px #424242;
+            box-shadow: 0px 2px 8px #424242;
+    border-radius: 0 0 0.5em 0.5em;
+    z-index: 100;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 900ms;
+    transition: opacity 900ms;
+  }
+  .forSubmenuParent:hover .submenuContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    padding: 0.4em 0.4em;
+    list-style-type: none;
+    position: absolute;
+    top: 3.2em;
+    background-color: #827100;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    -webkit-box-shadow: 0px 2px 8px #424242;
+            box-shadow: 0px 2px 8px #424242;
+    border-radius: 0 0 0.5em 0.5em;
+    z-index: 100;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.submenuItem {
+  padding: 0.3em 0.3em;
+  margin: 0 0.3em;
+  border-radius: 0.5em;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.submenuItem:hover {
+  background-color: #F0DB4F;
+  -webkit-box-shadow: 2px 2px 8px #424242;
+          box-shadow: 2px 2px 8px #424242;
+  border-radius: 0.5em;
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+/* FOR SMALLER DIVICES */
+@media (max-width: 800px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0.5em 0;
+    color: white;
+  }
+  .menuItem {
+    display: none;
+  }
+  .forSmallScreenMenuIcon::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c9";
+    display: inline-block;
+    padding: 0 0.4em;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #323330;
+  }
+  .forSmallScreenMenuIconOpen::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00d";
+    display: inline-block;
+    padding: 0 0.4em;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  .addAnimationIcons {
+    -webkit-animation: manuIconChangeAnime 500ms;
+            animation: manuIconChangeAnime 500ms;
+  }
+  .menuItemAppear {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 0.2em 1em;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .forSubMenuIcon::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0dd";
+    display: inline-block;
+    padding: 0 0.4em;
+    font-size: 1em;
+    font-weight: 900;
+  }
+  .submenuContainer {
+    display: none;
+  }
+  .subMenuContainerAppear {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 100%;
+    left: 0;
+  }
+  .submenuItem a {
+    width: 100%;
+    height: auto;
+    padding: 0.2em 1em;
+  }
+}
+
+/*----------------- Arrow Up Button--------------------- */
+.toTopButtonHide {
+  display: none;
+}
+
+.toTopButtonAppear {
+  display: box;
+  position: fixed;
+  bottom: 1.5em;
+  left: 1.5em;
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+
+.toTopButtonAppear:hover {
+  color: rgba(255, 255, 255, 0.905);
+}
+
+/* ----------------------------------------------------- */
+/* MAIN BODY ITEMS */
+.mainBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0em 2.5em;
+  height: 140vh;
+  width: auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.element1 {
+  margin-top: 20vh;
+  color: white;
+  text-shadow: 0 0 8px grey;
+  text-shadow: 0 0 12px #535252;
+  text-align: center;
+}
+
+/* ------------------------------- */
+/* Animation for menu icon change */
+@-webkit-keyframes manuIconChangeAnime {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  30% {
+    opacity: 1;
+    -webkit-transform: scaleX(1.3);
+            transform: scaleX(1.3);
+  }
+  40% {
+    opacity: 1;
+    -webkit-transform: scaleX(0.7);
+            transform: scaleX(0.7);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scaleX(1.2);
+            transform: scaleX(1.2);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scaleX(0.8);
+            transform: scaleX(0.8);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: scaleX(1.1);
+            transform: scaleX(1.1);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: scaleX(0.9);
+            transform: scaleX(0.9);
+  }
+  90% {
+    opacity: 1;
+    -webkit-transform: scaleX(1.05);
+            transform: scaleX(1.05);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+@keyframes manuIconChangeAnime {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  30% {
+    opacity: 1;
+    -webkit-transform: scaleX(1.3);
+            transform: scaleX(1.3);
+  }
+  40% {
+    opacity: 1;
+    -webkit-transform: scaleX(0.7);
+            transform: scaleX(0.7);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scaleX(1.2);
+            transform: scaleX(1.2);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scaleX(0.8);
+            transform: scaleX(0.8);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: scaleX(1.1);
+            transform: scaleX(1.1);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: scaleX(0.9);
+            transform: scaleX(0.9);
+  }
+  90% {
+    opacity: 1;
+    -webkit-transform: scaleX(1.05);
+            transform: scaleX(1.05);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+/*# sourceMappingURL=menu.css.map */

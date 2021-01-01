@@ -1,0 +1,221 @@
+// importing a font in css
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+// Setting up the colours
+$colors: (
+    primary: #F0DB4F,
+    secondary: #46344E,
+    third: #5a5560,
+    accent:  #323330,
+    bright: #f0f0f0,
+    //light function (normal css funciton, lightens the color by the % amount)
+    secondary-light: lighten(#46344E, 5%),
+    secondary-dark: darken(#46344E, 5%),
+    third-light: lighten(#5a5560, 5%),
+    third-dark: darken(#5a5560, 5%),
+    accent-light: lighten(#323330, 5%),
+    accent-dark: darken(#323330, 5%),
+    
+    redish: #fb4848,
+    redish-trans: #fb4848ce,
+    redish-light: lighten(#fb4848, 5%),
+    redish-dark: darken(#fb4848, 5%),
+    greenish: #48a148,
+    greenish-trans: #48a148ce,
+    greenish-light: lighten(#48a148, 5%),
+    greenish-dark: darken(#48a148, 5%),
+    blueish: #4848fb,
+    blueish-trans: #4848fbce,
+    blueish-light: lighten(#4848fb, 5%),
+    blueish-dark: darken(#4848fb, 5%)    
+);
+
+// color function
+@function color($colorName){
+    @return map-get($colors, $colorName)
+    // ---------------
+    // so whenever we call a call a color we dont need to call map-get($colors...)
+    // we can call color(primary) for example
+}
+
+a{
+    color: inherit;
+}
+
+body{
+    margin: 0;
+    padding:0;
+    width: 100%;
+    height: 100%;
+    font-family: "Rubik";
+
+    background-color: color(bright);
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 100%;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.innerBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+    height: 25vw;
+    transform: rotate(45deg);
+
+    transition:all 200ms ease-in;
+    
+    .innexBoxItems{
+        transform: rotate(-45deg);
+        transition:all 200ms ease-in;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+        box-sizing: border-box;
+
+        i{
+            font-size: 5vw;
+        }
+
+        p{
+            margin: 0;
+            text-align:justify;
+            display: flex;
+            position: absolute;
+            transform: scaleY(0);
+            transition: all 00ms ease-in;
+        }
+    }
+}
+
+.service1{
+    background-color: color(third-light);
+    color: color(primary);
+    overflow-y: scroll;
+    scrollbar-width: none; 
+}
+
+.service2{
+    background-color: color(third);
+    color: color(primary);
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.service3{
+    background-color: color(third-dark);
+    color: color(primary);
+    overflow-y: scroll;
+    scrollbar-width: none; 
+}
+
+.innerBox:hover{
+    transform: rotate(0deg);
+    cursor: pointer;
+    z-index: 10;
+
+    i{
+        display: none;
+    }
+
+    p{
+        display: inline;
+        position: relative;
+        transform: scaleY(1);
+    }
+
+    .innexBoxItems{
+        transform: rotate(0deg);
+    }
+}
+
+
+@media(max-width: 801px){
+    .mainContainer{
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 100%;
+        height: 90vh;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        margin-right: 0;
+        transform: none;
+    }
+
+    .innerBox{
+        display: flex;
+        flex: 1 1 33%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        min-width: 450px;
+        height: 100%;
+        margin-bottom: 2em;;
+        transform: rotate(0);
+    
+        
+        .innexBoxItems{
+            transform: rotate(0);
+            transition:all 200ms ease-in;
+    
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            box-sizing: border-box;
+    
+            i{
+                font-size: 5vw;
+                display: none;
+            }
+    
+            p{
+                margin: 0;
+                text-align:justify;
+                display: flex;
+                position: none;
+                transform: scaleY(0);
+                transition: all 00ms ease-in;
+            }
+        }
+
+        
+    }
+
+    .innerBox:hover{
+        transform: rotate(0deg);
+        z-index: 10;
+    
+        i{
+            display: none;
+        }
+    
+        p{
+            display: none;
+            position: relative;
+            transform: scaleY(1);
+        }
+    
+        .innexBoxItems{
+            transform: rotate(0deg);
+        }
+    }
+}

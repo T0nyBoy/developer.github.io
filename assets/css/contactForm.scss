@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+//table storing lots of variables
+$colors: (
+    primary: #F0DB4F,
+    secondary: #46344E,
+    third: #5a5560,
+    accent:  #323330,
+    bright: #f0f0f0,
+    //light function (normal css funciton, lightens the color by the % amount)
+    secondary-light: lighten(#46344E, 5%),
+    secondary-dark: darken(#46344E, 5%),
+    third-light: lighten(#5a5560, 5%),
+    third-dark: darken(#5a5560, 5%),
+    accent-light: lighten(#323330, 5%),
+    accent-dark: darken(#323330, 5%),
+    bright-dark: darken(#f0f0f0,15%),
+    
+    redish: #fb4848,
+    redish-trans: #fb4848a5,
+    redish-light: lighten(#fb4848, 5%),
+    redish-dark: darken(#fb4848, 5%),
+    greenish: #48a148,
+    greenish-trans: #48a148a5,
+    greenish-light: lighten(#48a148, 5%),
+    greenish-dark: darken(#48a148, 5%),
+    blueish: #4848fb,
+    blueish-trans: #4848fba5,
+    blueish-light: lighten(#4848fb, 5%),
+    blueish-dark: darken(#4848fb, 5%)    
+);
+
+@function color($colorName){
+    @return map-get($colors, $colorName)
+    // ---------------
+    // so whenever we call a call a color we dont need to call map-get($colors...)
+    // we can call color(primary) for example
+}
+
+
+.mainBox{
+    width: 530px;
+    height: 530px;
+    display: flex;
+    flex-direction: row;
+    margin: 2em auto;
+    background-color: color(third);
+    border-radius: 35px;
+    // box-shadow: 0 0 90px color(primary);
+    box-sizing: border-box;
+
+    .leftColumn{
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 45%;
+        // border: 2px solid red;
+        border-radius: 35px 0 0 35px;
+        background-color: color(secondary);
+
+        .logoBox{
+            display: flex;
+            flex: 1 0 50%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 35px 0 0 0;
+            background-color: color(third-light);
+            // clip-path: polygon(0% 0, 100% 0%, 75% 100%, 0% 100%);
+            overflow: visible;
+
+            color: color(secondary);
+            font-family: "Rubik";
+            font-size: 3.2em;
+            writing-mode: vertical-rl;
+            text-align: center;
+            line-height: 1.5;
+
+            img{
+                max-height: 200px;
+                max-width: 200px;
+                // rotate: 90deg;
+            }
+        }
+
+        .otherContactWays{
+            display: flex;
+            flex: 1 0 50%;
+            align-items: flex-end;
+            padding-bottom: 2.3em;
+            justify-content: center;
+            box-sizing: border-box;
+            border-radius: 0 0 0 35px;
+            background-color: color(third-light);
+            // clip-path: polygon(0 0, 75% 0%, 100% 100%, 0% 100%);
+
+            span{
+                color: color(accent);
+                margin: 0 0.2em;
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    .mainContactFrame{
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 55%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;        
+        border-radius: 0 35px 35px 0;
+        background-color: color(bright);
+        border: 8px solid color(third-light);
+
+        h1{
+            color: color(secondary);
+            font-weight: 900;
+        }
+
+        #contactForm{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5em;
+        box-sizing: border-box;
+
+
+        #userName, #email, #phone{
+            border: 2px solid color(secondary);
+            width: 260px;
+            height: 2.2em;
+            border-radius: 25px;
+            padding-left: 0.7em;
+            font-family: "Rubik";
+            box-sizing: border-box;
+
+            &:focus{
+                box-shadow: 0 0 6px color(secondary-light);
+            }
+        }
+
+
+        #message{
+            display: flex;
+            width: 260px;
+            border: 2px solid color(secondary);
+            border-radius: 8px;
+            padding: 0 0.3em;
+            font-family: "Rubik";
+            box-sizing: border-box;
+            resize: none;
+            text-overflow: scroll;
+
+            &:focus{
+                box-shadow: 0 0 6px color(secondary-light);
+            }
+        }
+
+        .robot{
+                label{
+                font-size: 0.8em;
+                    color: color(secondary);
+                }
+                #imRobot{
+                    outline: 2px solid color(secondary-light);
+                }
+
+            }
+
+            .submitBtn{
+               width: 260px;
+               height: 2em;
+               background-color: color(third-light);
+               color: color(primary);
+               border-radius: 8px;
+               border: none;
+               font-size: 1.1em;
+               font-weight: bold;
+               transition: background-color 120ms ease-in;
+
+               &:hover{
+                   background-color: color(third-dark);
+               }
+               &:active{
+                background-color: color(secondary-light);
+                box-shadow: inset 2px 2px 8px darkslategray;
+               }
+            }
+            
+            input, #submitBtn, #message{
+                margin-bottom: -1em;
+            }      margin-top: 0.2em;
+           
+
+        }
+        }
+    }
+
+    @media (max-width: 815px){
+        .mainBox{
+            width: 90%;
+            max-width: 350px;
+            height: 80vh;
+            margin-top: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: color(secondary);
+            border-radius: 0px;
+            box-shadow: none;
+            box-sizing: border-box;
+
+            .mainContactFrame{
+                flex: 0 1 100%;
+                border-radius: 0px;
+                width: 100%;
+                max-width: 350px;
+                height: 80vh;
+            }
+    
+            .leftColumn{
+                display: none;
+                flex: 1 1 10%;
+                background-color: color(primary);
+                height: 60px;
+                order: 2;
+
+
+                .logoBox{
+                    display: none;
+                    flex: 1 0 90%;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 0px;
+                    background-color: color(primary);
+                    clip-path: 0;
+                    clip-path: none;
+
+                    font-size: 2em;
+                    writing-mode: horizontal-tb;
+                    text-align: center;
+                    line-height: 1.5;
+                }
+
+
+                .otherContactWays{
+                    display: none;
+                    flex: 0 1 90%;
+                    width: 100%;
+                    align-items: flex-end;
+                    justify-content: space-around;
+                    padding-bottom: 0.5em;
+                    border-radius: 0 0 0 0px;
+                    background-color: color(third-light);
+                    clip-path: none;
+                }
+            }
+        }
+
+    }
+
+    .forError, .forSuccess {
+        font-size: 0.8em;
+        max-width: 340px;
+        min-width: 340px; /* Set a default minimum width */
+        margin-left: -170px; /* Divide value of min-width by 2 */
+        background-color: rgba(255, 93, 93, 0.80); /* Black background color */
+        color: #fff; /* White text color */
+        text-align: center; /* Centered text */
+        border-radius: 8px; /* Rounded borders */
+        padding: 16px 8px; /* Padding */
+        position: fixed; /* Sit on top of the screen */
+        z-index: 1; /* Add a z-index if needed */
+        left: 50%; /* Center the snackbar */
+        top: 0.7em; /* 30px from the bottom */
+      }
+
+      .forSuccess{
+        max-width: 120px;
+        min-width: 120px;
+        margin-left: -60px;
+        background-color: rgba(0, 216, 194, 0.796);
+        right: 20%;
+      }

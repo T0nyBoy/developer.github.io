@@ -1,0 +1,85 @@
+// Setting up the colours
+$colors: (
+    primary: #F0DB4F,
+    secondary: #46344E,
+    third: #5a5560,
+    accent:  #323330,
+    bright: #f0f0f0,
+    //light function (normal css funciton, lightens the color by the % amount)
+    secondary-light: lighten(#46344E, 5%),
+    secondary-dark: darken(#46344E, 5%),
+    third-light: lighten(#5a5560, 5%),
+    third-dark: darken(#5a5560, 5%),
+    accent-light: lighten(#323330, 5%),
+    accent-dark: darken(#323330, 5%),
+    
+    redish: #fb4848,
+    redish-trans: #fb4848ce,
+    redish-light: lighten(#fb4848, 5%),
+    redish-dark: darken(#fb4848, 5%),
+    greenish: #48a148,
+    greenish-trans: #48a148ce,
+    greenish-light: lighten(#48a148, 5%),
+    greenish-dark: darken(#48a148, 5%),
+    blueish: #4848fb,
+    blueish-trans: #4848fbce,
+    blueish-light: lighten(#4848fb, 5%),
+    blueish-dark: darken(#4848fb, 5%)    
+);
+
+// color function
+@function color($colorName){
+    @return map-get($colors, $colorName)
+    // ---------------
+    // so whenever we call a call a color we dont need to call map-get($colors...)
+    // we can call color(primary) for example
+}
+
+.portfolioWrapper{
+    display:flex;
+    flex-direction: column;
+    width: 98vw;
+    min-width: 360px;
+    height: 78vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.3em;
+    border: 4px solid red;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    scroll-snap-type: y mandatory;
+}
+
+.section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: lightcoral;
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+
+    .leftSectionPart{
+        display: flex;
+        flex:1 0 40%;
+        order:1;
+        height: auto;
+        align-content: center;
+        justify-content: flex-start;
+        padding: 0.5em 1em;
+        
+        border: 2px solid blue;
+    }
+
+    .rightSectionPart{
+        display: flex;
+        flex:1 1 60%;
+        order:2;
+        height: auto;
+        align-content: center;
+        justify-content: center;
+
+        border: 2px solid blue;
+    }
+}
+

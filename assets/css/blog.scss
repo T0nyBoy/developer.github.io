@@ -1,0 +1,164 @@
+// Setting up the colours
+$colors: (
+    primary: #F0DB4F,
+    secondary: #46344E,
+    third: #5a5560,
+    accent:  #323330,
+    bright: #f0f0f0,
+    //light function (normal css funciton, lightens the color by the % amount)
+    secondary-light: lighten(#46344E, 5%),
+    secondary-dark: darken(#46344E, 5%),
+    third-light: lighten(#5a5560, 5%),
+    third-dark: darken(#5a5560, 5%),
+    accent-light: lighten(#323330, 5%),
+    accent-dark: darken(#323330, 5%),
+    bright-dark: darken(#f0f0f0,10%),
+    
+    redish: #fb4848,
+    redish-trans: #fb4848a5,
+    redish-light: lighten(#fb4848, 5%),
+    redish-dark: darken(#fb4848, 5%),
+    greenish: #48a148,
+    greenish-trans: #48a148a5,
+    greenish-light: lighten(#48a148, 5%),
+    greenish-dark: darken(#48a148, 5%),
+    blueish: #4848fb,
+    blueish-trans: #4848fba5,
+    blueish-light: lighten(#4848fb, 5%),
+    blueish-dark: darken(#4848fb, 5%)
+);
+
+// color function
+@function color($colorName){
+    @return map-get($colors, $colorName)
+    // ---------------
+    // so whenever we call a call a color we dont need to call map-get($colors...)
+    // we can call color(primary) for example
+}
+
+
+.blogContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em ;
+    margin-bottom: 5em;
+    padding: 0;
+    height: 100%;
+    width: auto;
+    // border: 4px solid color(accent);
+    // border-radius: 3em 0em 3em 0em;
+    // box-shadow: 0px 0px 8px color(third-light);
+}
+
+.containerDynamic{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    min-width: 360px;
+    padding: 1em;
+}
+
+.topField{
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemsPerPageContainer, .searchFields{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@media(max-width:850px){
+    .topField{
+        flex-direction: column;
+    }
+
+    .itemsPerPageContainer, .searchFields{
+        margin-top: 0.5em;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#itemsPerPage{
+    border: none;
+    color: color(primary);
+    background-color: color(accent);
+    
+}
+
+
+.updateItemsPerPage, .searchBtn{
+    background-color: color(accent);
+    border-radius: 900px;
+    color: color(primary);
+    border: none;
+    width: 6em;
+    height: 2em;
+    margin-left: 1em;
+}
+
+.tabletContent{
+    display: flex;
+    flex-direction: column;
+    margin: 1em 2em;
+}
+
+.itemsFromDb{
+    // border-bottom: 1px solid lightgray;
+    margin: 0.2em;
+    padding: 0.5em;
+    cursor: pointer;
+    border-radius: 0em 0em;
+    // box-shadow: 0px 0px 4px color(third-light);
+    background-color:color(bright-dark);
+}
+
+.forPagination{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageNumber{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid color(third);
+    margin: 0 0.2em;
+    padding: 0.1em;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+}
+
+.pageNumber:hover{
+    background-color: color(third);
+    color: color(primary);
+}
+
+.pageNumberActive{
+    background-color: color(primary);
+    color: color(third);
+}
+
+.noSearchResultBackToContents{
+    cursor: pointer;
+    color: color(secondary-light);
+}
+
+
+// -------------HTML ITEMS FROM JS------------------------------
+
+summary{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+details p{
+    cursor: default;
+}

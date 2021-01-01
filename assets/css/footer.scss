@@ -1,0 +1,65 @@
+// Setting up the colours
+$colors: (
+    primary: #F0DB4F,
+    secondary: #46344E,
+    third: #5a5560,
+    accent:  #323330,
+    bright: #f0f0f0,
+    //light function (normal css funciton, lightens the color by the % amount)
+    secondary-light: lighten(#46344E, 5%),
+    secondary-dark: darken(#46344E, 5%),
+    third-light: lighten(#5a5560, 5%),
+    third-dark: darken(#5a5560, 5%),
+    accent-light: lighten(#323330, 5%),
+    accent-dark: darken(#323330, 5%),
+    
+    redish: #fb4848,
+    redish-trans: #fb4848a5,
+    redish-light: lighten(#fb4848, 5%),
+    redish-dark: darken(#fb4848, 5%),
+    greenish: #48a148,
+    greenish-trans: #48a148a5,
+    greenish-light: lighten(#48a148, 5%),
+    greenish-dark: darken(#48a148, 5%),
+    blueish: #4848fb,
+    blueish-trans: #4848fba5,
+    blueish-light: lighten(#4848fb, 5%),
+    blueish-dark: darken(#4848fb, 5%)
+);
+
+@function color($colorName){
+    @return map-get($colors, $colorName)
+    // ---------------
+    // so whenever we call a call a color we dont need to call map-get($colors...)
+    // we can call color(primary) for example
+}
+
+.footerContainer{
+    display: flex;
+    width: 100%;
+    height: 2.2em;
+    margin-top: 1em;
+    position: fixed;
+    bottom: 0px;
+
+    padding: 0.5em 3em;
+    box-sizing: border-box;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background-color:  color(accent-light);
+    color: color(primary);
+
+    font-size: 1.3em;
+}
+
+.footerItem span{
+    margin: 0 0 0 0.8em;
+   
+}
+
+.footerItem  a{
+    color: inherit;
+    text-decoration: none;
+}

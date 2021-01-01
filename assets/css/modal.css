@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 100;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #323330ee;
+  /* Black w/ opacity */
+}
+
+.contactForm {
+  padding-top: 0;
+  /* Location of contact form box */
+}
+
+.mainBox {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* Modal Content */
+.modal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 80vw;
+  height: 80vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: auto;
+  padding: 1em;
+  background-color: #F0DB4F;
+  margin: auto;
+}
+
+/* The Close Button */
+.close {
+  color: #46344E;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeContactForm {
+  position: relative;
+  top: 5vh;
+  right: 15vw;
+  color: #F0DB4F;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 200;
+}
+
+.close:hover,
+.close:focus, .closeContactForm:hover, .closeContactForm:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=modal.css.map */
