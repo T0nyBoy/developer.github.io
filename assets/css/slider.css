@@ -27,7 +27,7 @@
 
 .imageForSlider {
   display: block;
-  width: 50%;
+  width: 100%;
   height: auto;
   margin-top: 3em;
   margin-left: 5vw;
@@ -44,7 +44,7 @@
   }
   .imageForSlider {
     display: block;
-    width: 40%;
+    width: 100%;
     height: auto;
     margin-top: 1em;
     margin-left: 30vw;
