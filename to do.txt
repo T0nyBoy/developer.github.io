@@ -1,14 +1,9 @@
 1. blog html - OK
 2. about - OK
-3. portfolio with slider
+3. portfolio with slider - OK
+    update portfolio
 4. setup the google sheets for raftopoulos.a
 5. update JS to match API links with new google sheet API links
 6. Google Analytics
 7. clear script of every page and let only whats needed
 
-problems: 
-1. main logo go lower - ok
-2. get in touch logo go lower and smaller - ok
-3. about logo lower - ok
-4. about on mobile fix it - ok
-5. ckeck blog photo behavour

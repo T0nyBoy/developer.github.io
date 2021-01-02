@@ -2,27 +2,52 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
-  height: calc(100vw * 0.25);
-  width: 99%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   overflow: hidden;
-  margin: 3.5em auto 1em;
-  border: 2px solid yellow;
 }
 
 .siema {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.imageForSlider {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin-top: 3em;
+  margin-left: 5vw;
+}
+
+@media (max-width: 800px) {
+  .siema {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .imageForSlider {
+    display: block;
+    width: 40%;
+    height: auto;
+    margin-top: 1em;
+    margin-left: 30vw;
+  }
 }
 /*# sourceMappingURL=slider.css.map */

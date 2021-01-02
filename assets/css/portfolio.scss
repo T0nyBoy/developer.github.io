@@ -44,7 +44,7 @@ $colors: (
     margin-left: auto;
     margin-right: auto;
     margin-top: 1.3em;
-    border: 4px solid red;
+    // border: 4px solid red;
     overflow-y: scroll;
     scrollbar-width: none;
     scroll-snap-type: y mandatory;
@@ -52,34 +52,53 @@ $colors: (
 
 .section{
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     width: 100%;
     height: 100%;
-    background-color: lightcoral;
+    // background-color: lightcoral;
     flex: 1 0 100%;
     scroll-snap-align: start;
 
     .leftSectionPart{
         display: flex;
-        flex:1 0 40%;
+        flex:1 0 36%;
         order:1;
-        height: auto;
         align-content: center;
         justify-content: flex-start;
         padding: 0.5em 1em;
+        box-sizing: content-box;
+        overflow-y: scroll;
+        scrollbar-width: none;
         
-        border: 2px solid blue;
+        // border: 2px solid blue;
     }
 
     .rightSectionPart{
         display: flex;
-        flex:1 1 60%;
+        flex:1 0 60%;
         order:2;
-        height: auto;
         align-content: center;
         justify-content: center;
+        box-sizing: content-box;
 
-        border: 2px solid blue;
+        // border: 2px solid blue;
     }
 }
 
+@media(max-width:800px){
+    .section{
+        flex-direction:column;
+        align-content: center;
+        justify-content: center;
+        
+        .leftSectionPart{
+            flex:1 1 58%;
+        }
+
+        .rightSectionPart{
+            flex:1 1 40%;
+            height: 40%;
+        }
+
+    }
+}
