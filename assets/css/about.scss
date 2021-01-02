@@ -74,14 +74,14 @@ $colors: (
     background-color: color(bright);
 }
 
-@media(max-width: 400px){
+@media(max-width: 600px){
     .aboutContainer{
         width: 100vw;
         padding: 1em 2em;
     }
 }
 
-@media(max-width: 580px){
+@media(max-width: 600px){
     .forImage{
        float: none;
     }
