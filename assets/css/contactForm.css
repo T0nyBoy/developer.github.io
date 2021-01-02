@@ -57,9 +57,9 @@
   line-height: 1.5;
 }
 
-.mainBox .leftColumn .logoBox img {
+.mainBox .leftColumn .logoBox .contactFormImageLogo {
   position: relative;
-  top: 1.5em;
+  top: 0em;
   max-height: 180px;
   max-width: 180px;
 }
