@@ -9,6 +9,6 @@
 problems: 
 1. main logo go lower - ok
 2. get in touch logo go lower and smaller - ok
-3. about logo lower
-4. about on mobile fix it
+3. about logo lower - ok
+4. about on mobile fix it - ok
 5. ckeck blog photo behavour
