@@ -1,51 +1,55 @@
-.slideContainer{
-    display: flex;
-    width: 100%; 
-    height: 100%;
-    box-sizing: border-box;
-
-    overflow: hidden;
-    // border: 2px solid yellow;
+.mySlides1, .mySlides2 {
+    display: none
 }
 
-.siema{
+
+.imageForSlider {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
     display: flex;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    position: relative;
+    margin: auto;
+    padding: 0 2em;
     box-sizing: border-box;
-    align-content: flex-end;
-    justify-content: center;
-    // border: 2px solid black;
+    overflow: hidden;
 }
 
-.imageForSlider{
-    display: block;
-    width: 90%;
-    height: auto;
-    padding: 1.5em;
-    // margin-top: 3em;
-    // margin-left: 5vw;
-    // border: 4px solid orange;
+@media(max-width: 700px){
+    .slideshow-container{
+        padding: 0;
+        display: block;
+    }
 }
 
-@media(max-width:800px){
-    .siema{
-        display: block;
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-        box-sizing: border-box;
-        // border: 2px solid black;
-    }
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
-    .imageForSlider{
-        display: block;
-        // width: auto;
-        height: 100%;
-        // margin-top: 1em;
-        padding: 1.5em;
-        // margin-left: 30vw;
-    }
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #5858589c;
+  color: #f0f0f0;
 }

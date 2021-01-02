@@ -39,15 +39,16 @@ $colors: (
     display:flex;
     flex-direction: column;
     width: 98vw;
-    min-width: 360px;
+    min-width: 300px;
     height: 78vh;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1.3em;
-    // border: 4px solid red;
     overflow-y: scroll;
     scrollbar-width: none;
     scroll-snap-type: y mandatory;
+    
+    // border: 4px solid red;
 }
 
 .section{
@@ -55,9 +56,10 @@ $colors: (
     flex-direction:row;
     width: 100%;
     height: 100%;
-    // background-color: lightcoral;
     flex: 1 0 100%;
     scroll-snap-align: start;
+    
+    // background-color: lightcoral;
 
     .leftSectionPart{
         display: flex;
@@ -80,25 +82,56 @@ $colors: (
         align-content: center;
         justify-content: center;
         box-sizing: content-box;
+        overflow: hidden;
 
         // border: 2px solid blue;
     }
 }
 
-@media(max-width:800px){
+.imageForSlider{
+    width: 100%;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    box-shadow: -1em 1em 0px color(third),
+                1em -1em 0px color(third-light)   ;
+}
+
+.imageForSliderStatic{
+    width: 90%;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    box-shadow: -1em 1em 0px color(third),
+                1em -1em 0px color(third-light)   ;
+}
+
+@media(max-width:700px){
     .section{
         flex-direction:column;
         align-content: center;
         justify-content: center;
         
         .leftSectionPart{
-            flex:1 1 58%;
+            flex:1 0 58%;
         }
 
         .rightSectionPart{
-            flex:1 1 40%;
-            height: 40%;
-        }
+            flex:0 1 40%;
 
+            .imageForSlider{
+                height: 100%;
+                margin-top: auto;
+                margin-bottom: auto;
+                box-shadow: none;
+            }
+
+            .imageForSliderStatic{
+                box-shadow: none;
+            }
+        }
     }
+
+
+   
 }

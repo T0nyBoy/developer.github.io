@@ -7,7 +7,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 98vw;
-  min-width: 360px;
+  min-width: 300px;
   height: 78vh;
   margin-left: auto;
   margin-right: auto;
@@ -73,9 +73,32 @@
           justify-content: center;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  overflow: hidden;
 }
 
-@media (max-width: 800px) {
+.imageForSlider {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  -webkit-box-shadow: -1em 1em 0px #5a5560, 1em -1em 0px #67616e;
+          box-shadow: -1em 1em 0px #5a5560, 1em -1em 0px #67616e;
+}
+
+.imageForSliderStatic {
+  width: 90%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  -webkit-box-shadow: -1em 1em 0px #5a5560, 1em -1em 0px #67616e;
+          box-shadow: -1em 1em 0px #5a5560, 1em -1em 0px #67616e;
+}
+
+@media (max-width: 700px) {
   .section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -89,14 +112,24 @@
   }
   .section .leftSectionPart {
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 58%;
-            flex: 1 1 58%;
+        -ms-flex: 1 0 58%;
+            flex: 1 0 58%;
   }
   .section .rightSectionPart {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 40%;
-            flex: 1 1 40%;
-    height: 40%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 40%;
+            flex: 0 1 40%;
+  }
+  .section .rightSectionPart .imageForSlider {
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .section .rightSectionPart .imageForSliderStatic {
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */

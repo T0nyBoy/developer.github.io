@@ -1,57 +1,20 @@
-const mySiema = new Siema(
-  {
-      selector: '.slide1',
-      duration: 200,
-      easing: 'ease-out',
-      perPage: 1,
-      startIndex: 0,
-      draggable: true,
-      multipleDrag: true,
-      threshold: 20,
-      loop: true,
-      rtl: false,
-      onInit: () => {},
-      onChange: () => {},
-    }
-);
-setInterval(() => mySiema.next(), 3000)
+var slideIndex = [1,1,1];
+var slideId = ["mySlides1", "mySlides2", "mySlides3"];
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
 
-const mySiema2 = new Siema(
-  {
-      selector: '.slide2',
-      duration: 200,
-      easing: 'ease-out',
-      perPage: 1,
-      startIndex: 0,
-      draggable: true,
-      multipleDrag: true,
-      threshold: 20,
-      loop: true,
-      rtl: false,
-      onInit: () => {},
-      onChange: () => {},
-    }
-);
-setInterval(() => mySiema2.next(), 3000)
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
 
-const mySiema3 = new Siema(
-  {
-      selector: '.slide3',
-      duration: 200,
-      easing: 'ease-out',
-      perPage: 1,
-      startIndex: 0,
-      draggable: true,
-      multipleDrag: true,
-      threshold: 20,
-      loop: true,
-      rtl: false,
-      onInit: () => {},
-      onChange: () => {},
-    }
-);
-setInterval(() => mySiema3.next(), 3000)
-
-
-// document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
-// document.querySelector('.next').addEventListener('click', () => mySiema.next());
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "flex";  
+}

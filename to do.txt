@@ -1,6 +1,6 @@
 1. blog html - OK
 2. about - OK
-3. portfolio with slider - OK
+3. portfolio with slider 
     update portfolio
 4. setup the google sheets for raftopoulos.a
 5. update JS to match API links with new google sheet API links
