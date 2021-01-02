@@ -58,8 +58,10 @@
 }
 
 .mainBox .leftColumn .logoBox img {
-  max-height: 200px;
-  max-width: 200px;
+  position: relative;
+  top: 1.5em;
+  max-height: 180px;
+  max-width: 180px;
 }
 
 .mainBox .leftColumn .otherContactWays {

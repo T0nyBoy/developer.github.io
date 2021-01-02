@@ -73,9 +73,10 @@ $colors: (
             text-align: center;
             line-height: 1.5;
 
-            img{
-                max-height: 200px;
-                max-width: 200px;
+            img{position: relative;
+                top: 1.5em;
+                max-height: 180px;
+                max-width: 180px;
                 // rotate: 90deg;
             }
         }
