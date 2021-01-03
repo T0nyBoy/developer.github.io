@@ -10,7 +10,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Rubik";
-  background: linear-gradient(-45deg, #F0DB4F 0%, #cacaca 100%) no-repeat center center fixed;
+  background: linear-gradient(45deg, #f0db4f 25%, #f0f0f0 25%, #f0f0f0 50%, #f0db4f 50%, #f0db4f 75%, #f0f0f0 75%, #f0f0f0 100%) no-repeat center center fixed;
 }
 
 .homeBody {

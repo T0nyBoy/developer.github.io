@@ -18,6 +18,8 @@
           align-items: center;
   background-color: #3f403c;
   color: #F0DB4F;
+  -webkit-clip-path: ellipse(72% 100% at 53.52% 100%);
+          clip-path: ellipse(72% 100% at 53.52% 100%);
   font-size: 1.3em;
 }
 

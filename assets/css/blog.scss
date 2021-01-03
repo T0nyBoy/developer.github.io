@@ -110,7 +110,9 @@ $colors: (
     padding: 0.5em;
     cursor: pointer;
     border-radius: 0em 0em;
-    background-color: color(third-blur);
+    background: #f0f0f037;
+    // box-shadow: 0 0 4px 0 color(accent-light);
+    backdrop-filter: blur(8px);
 }
 
 .forPagination{
