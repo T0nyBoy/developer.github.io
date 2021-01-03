@@ -67,12 +67,15 @@ $colors: (
         order:1;
         align-content: center;
         justify-content: flex-start;
+        margin: 1em;
         padding: 0.5em 1em;
         box-sizing: content-box;
         overflow-y: scroll;
         scrollbar-width: none;
         
-        // border: 2px solid blue;
+        box-shadow: 8px 4px 10px 0 color(accent-light);
+        backdrop-filter: blur(24px);
+        border-radius: 15px;
     }
 
     .rightSectionPart{

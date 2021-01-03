@@ -8,6 +8,7 @@ let toTopButton = document.querySelector(".toTopButton");
 
 
 //when in small screen tap burger to make menu appear
+if(burger){
 burger.addEventListener("click", ()=>{
     menuItem.forEach(item =>{
         item.classList.toggle("menuItemAppear");
@@ -19,7 +20,8 @@ burger.addEventListener("click", ()=>{
     //reflowing the DOM
     void burger.offsetWidth;
     burger.classList.add("addAnimationIcons");
-});
+})
+};
 
 
 //make submenu appear
@@ -42,7 +44,9 @@ window.onscroll = function (e) {
     };
 };
 
+if(toTopButton){
 toTopButton.addEventListener("click", ()=>{
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 })
+};

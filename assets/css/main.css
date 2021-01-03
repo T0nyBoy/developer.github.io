@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 body {
@@ -9,7 +10,18 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Rubik";
-  background-color: #f0f0f0;
+  background: linear-gradient(-45deg, #F0DB4F 0%, #cacaca 100%) no-repeat center center fixed;
+}
+
+.homeBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, #5a5560 25%, #F0DB4F 60%, #323330 75%) no-repeat center center fixed;
 }
 
 .mainContainer {
@@ -97,22 +109,37 @@ body {
 }
 
 .service1 {
-  background-color: #67616e;
-  color: #F0DB4F;
+  background: #5a556060;
+  -webkit-box-shadow: 0 8px 32px 0 #3f403c;
+          box-shadow: 0 8px 32px 0 #3f403c;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 70px;
+  color: #cacaca;
   overflow-y: scroll;
   scrollbar-width: none;
 }
 
 .service2 {
-  background-color: #5a5560;
-  color: #F0DB4F;
+  background: #5a556060;
+  -webkit-box-shadow: 0 8px 32px 0 #3f403c;
+          box-shadow: 0 8px 32px 0 #3f403c;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 70px;
+  color: #cacaca;
   overflow-y: scroll;
   scrollbar-width: none;
 }
 
 .service3 {
-  background-color: #4d4952;
-  color: #F0DB4F;
+  background: #5a556060;
+  -webkit-box-shadow: 0 8px 32px 0 #3f403c;
+          box-shadow: 0 8px 32px 0 #3f403c;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 70px;
+  color: #cacaca;
   overflow-y: scroll;
   scrollbar-width: none;
 }
@@ -122,10 +149,6 @@ body {
           transform: rotate(0deg);
   cursor: pointer;
   z-index: 10;
-}
-
-.innerBox:hover i {
-  display: none;
 }
 
 .innerBox:hover p {
@@ -161,6 +184,7 @@ body {
             align-items: center;
     position: static;
     margin-right: 0;
+    margin-top: 3em;
     -webkit-transform: none;
             transform: none;
   }
@@ -182,11 +206,12 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     width: 80%;
-    min-width: 450px;
+    min-width: 360px;
     height: 100%;
     margin-bottom: 2em;
     -webkit-transform: rotate(0);
             transform: rotate(0);
+    padding: 0;
   }
   .innerBox .innexBoxItems {
     -webkit-transform: rotate(0);
@@ -211,8 +236,7 @@ body {
             box-sizing: border-box;
   }
   .innerBox .innexBoxItems i {
-    font-size: 5vw;
-    display: none;
+    font-size: 15vw;
   }
   .innerBox .innexBoxItems p {
     margin: 0;

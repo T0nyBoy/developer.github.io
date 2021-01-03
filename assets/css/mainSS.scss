@@ -7,19 +7,15 @@ $colors: (
     primary: #F0DB4F,
     secondary: #46344E,
     third: #5a5560,
-    third-blur: #5a556060,
     accent:  #323330,
     bright: #f0f0f0,
     //light function (normal css funciton, lightens the color by the % amount)
     secondary-light: lighten(#46344E, 5%),
     secondary-dark: darken(#46344E, 5%),
     third-light: lighten(#5a5560, 5%),
-    third-light-blur: lighten(#5a5560, 5%),
     third-dark: darken(#5a5560, 5%),
-    third-dark-blur: darken(#5a5560, 5%),
     accent-light: lighten(#323330, 5%),
     accent-dark: darken(#323330, 5%),
-    bright-dark: darken(#f0f0f0, 15%),
     
     redish: #fb4848,
     redish-trans: #fb4848ce,
@@ -45,7 +41,6 @@ $colors: (
 
 a{
     color: inherit;
-    text-decoration: none;
 }
 
 body{
@@ -54,16 +49,8 @@ body{
     width: 100%;
     height: 100%;
     font-family: "Rubik";
-    background: linear-gradient(-45deg,color(primary) 0%, color(bright-dark) 100%) no-repeat center center fixed;
-}
 
-.homeBody{
-    display: flex;
-    margin: 0;
-    padding:0;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(45deg,color(third)25%, color(primary) 60%, color(accent) 75%) no-repeat center center fixed;
+    background-color: color(bright);
 }
 
 .mainContainer{
@@ -117,31 +104,22 @@ body{
 }
 
 .service1{
-    background: color(third-blur);
-    box-shadow: 0 8px 32px 0 color(accent-light);
-    backdrop-filter: blur(4px);
-    border-radius: 70px;
-    color: color(bright-dark);
+    background-color: color(third-light);
+    color: color(primary);
     overflow-y: scroll;
     scrollbar-width: none; 
 }
 
 .service2{
-    background: color(third-blur);
-    box-shadow: 0 8px 32px 0 color(accent-light);
-    backdrop-filter: blur(4px);
-    border-radius: 70px;
-    color: color(bright-dark);
+    background-color: color(third);
+    color: color(primary);
     overflow-y: scroll;
     scrollbar-width: none;
 }
 
 .service3{
-    background: color(third-blur);
-    box-shadow: 0 8px 32px 0 color(accent-light);
-    backdrop-filter: blur(4px);
-    border-radius: 70px;
-    color: color(bright-dark);
+    background-color: color(third-dark);
+    color: color(primary);
     overflow-y: scroll;
     scrollbar-width: none; 
 }
@@ -151,6 +129,9 @@ body{
     cursor: pointer;
     z-index: 10;
 
+    i{
+        display: none;
+    }
 
     p{
         display: inline;
@@ -174,9 +155,7 @@ body{
         align-items: center;
         position: static;
         margin-right: 0;
-        margin-top: 3em;
         transform: none;
-
     }
 
     .innerBox{
@@ -186,11 +165,10 @@ body{
         align-items: center;
         justify-content: center;
         width: 80%;
-        min-width: 360px;
+        min-width: 450px;
         height: 100%;
-        margin-bottom: 2em;
+        margin-bottom: 2em;;
         transform: rotate(0);
-        padding: 0;
     
         
         .innexBoxItems{
@@ -205,8 +183,8 @@ body{
             box-sizing: border-box;
     
             i{
-                font-size: 15vw;
-                // display: none;
+                font-size: 5vw;
+                display: none;
             }
     
             p{

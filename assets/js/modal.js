@@ -116,6 +116,7 @@ getInTouch.forEach((e)=>{
 });
 
 // When the user clicks on <span> (x), close the modal
+if(closeContactForm){
 closeContactForm.onclick = function() {
     theContactForm.style.display = "none";
 }
@@ -125,4 +126,5 @@ window.addEventListener("click", function(event) {
   if (event.target == theContactForm) {
     theContactForm.style.display = "none";
   }
-});
+})
+};

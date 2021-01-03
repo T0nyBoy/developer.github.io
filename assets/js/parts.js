@@ -2,11 +2,13 @@
 let head = document.querySelector("head");
 let menu = document.querySelector(".menu");
 let footer = document.querySelector(".footerContainer");
+let footerHome = document.querySelector(".footerContainerHome");
 let contactFormHTML = document.querySelector(".contactForm");
 
 
 
 // ---------------------------HEAD------------------------------------------------------------------------------------------
+if(head){
 head.innerHTML = 
 `
 <meta charset="utf-8">
@@ -16,6 +18,7 @@ head.innerHTML =
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/assets/css/menu.css">
         <link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="stylesheet" href="/assets/css/footerHome.css">
         <link rel="stylesheet" href="/assets/css/footer.css">
         <link rel="stylesheet" href="/assets/css/modal.css">
         <link rel="stylesheet" href="/assets/css/contactForm.css">
@@ -26,25 +29,29 @@ head.innerHTML =
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
         <link rel="icon" href="/assets/photos/rubik_logo_AR.png">
 `
+}
 // ---------------------------------------------------------------------------------------------------------------------------
 
 
 // -----------------------------------------MENU BAR-------------------------------------------------------------------------
+if(menu){
 menu.innerHTML = 
 `
 <span class="forSmallScreenMenuIcon"></span>
-            <div class="menuItem logo"><a href="/index.html"><img src="/assets/photos/rubik_logo_AR.png"></a></div>
+            <div class="menuItem logo"><a href="/index.html"><img src="/assets/photos/rubik_logo_AR.png" class="menuLogoImage"></a></div>
             <div class="menuItem button"><a href="/index.html">Home</a></div>
             <div class="menuItem button"><a href="/blog.html">Blog</a></div>
             <div class="menuItem button"><a href="/portfolio.html">Portfolio</a></div>
             <div class="menuItem button"><a href="/about.html">About</a></div>
             <div class="menuItem button getInTouch"><a href="#">Get in touch</a></div>
 `
+}
 // ---------------------------------------------------------------------------------------------------------------------------
 
 
 
 // ------------------------------------------------FOOTER--------------------------------------------------------------------
+if(footer){
 footer.innerHTML = 
 `
 <div class="footerItem">
@@ -54,10 +61,29 @@ footer.innerHTML =
             </div>
             <div class="footerItem getInTouch"><a href="#">Get in touch</a></div>
 `
+}
 // ---------------------------------------------------------------------------------------------------------------------------
 
 
+// ------------------------------------------------FOOTER--------------------------------------------------------------------
+if(footerHome){
+footerHome.innerHTML = 
+`
+<div class="footerItemHome">
+                <span><a href="https://github.com/T0nyBoy" target="_blank"><i class="fab fa-github-square"></i></a></span>
+                <span><a href="https://twitter.com/T0ny_Boy" target="_blank"><i class="fab fa-twitter-square"></i></a></span>
+                <span><a href="https://www.linkedin.com/in/antonisraftopoulos/" target="_blank"><i class="fab fa-linkedin"></i></a></span>
+            </div>
+            <div class="footerItemHome getInTouch"><a href="#">Get in touch</a></div>
+`
+}
+// ---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
 // ------------------------------------------------CONTACT FORM---------------------------------------------------------------------
+if(contactFormHTML){
 contactFormHTML.innerHTML = 
 `
 <span class="closeContactForm"><i class="fas fa-window-close"></i></span>
@@ -111,4 +137,5 @@ contactFormHTML.innerHTML =
                 </div>
             </div>
 `
+}
 // ---------------------------------------------------------------------------------------------------------------------------

@@ -49,11 +49,17 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin: 1em;
   padding: 0.5em 1em;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   overflow-y: scroll;
   scrollbar-width: none;
+  -webkit-box-shadow: 8px 4px 10px 0 #3f403c;
+          box-shadow: 8px 4px 10px 0 #3f403c;
+  -webkit-backdrop-filter: blur(24px);
+          backdrop-filter: blur(24px);
+  border-radius: 15px;
 }
 
 .section .rightSectionPart {

@@ -20,7 +20,7 @@ $colors: (
     redish-light: lighten(#fb4848, 5%),
     redish-dark: darken(#fb4848, 5%),
     greenish: #48a148,
-    greenish-trans: #48a148a5,
+    greenish-trans: #48a1486d,
     greenish-light: lighten(#48a148, 5%),
     greenish-dark: darken(#48a148, 5%),
     blueish: #4848fb,
@@ -43,18 +43,19 @@ $colors: (
     display: flex;
     flex-direction: row;
     margin: 2em auto;
-    background-color: color(third);
     border-radius: 35px;
-    // box-shadow: 0 0 90px color(primary);
     box-sizing: border-box;
+    
+    background: #f0f0f037;
+    // box-shadow: 0 8px 14px 0 color(accent-light);
+    backdrop-filter: blur(8px);
 
     .leftColumn{
         display: flex;
         flex-direction: column;
         flex: 0 1 45%;
-        // border: 2px solid red;
         border-radius: 35px 0 0 35px;
-        background-color: color(secondary);
+        // background-color: color(secondary);
 
         .logoBox{
             display: flex;
@@ -62,7 +63,7 @@ $colors: (
             align-items: center;
             justify-content: center;
             border-radius: 35px 0 0 0;
-            background-color: color(third-light);
+            // background-color: color(third-light);
             // clip-path: polygon(0% 0, 100% 0%, 75% 100%, 0% 100%);
             overflow: visible;
 
@@ -77,7 +78,6 @@ $colors: (
                 top: 0em;
                 max-height: 180px;
                 max-width: 180px;
-                // rotate: 90deg;
             }
         }
 
@@ -89,7 +89,7 @@ $colors: (
             justify-content: center;
             box-sizing: border-box;
             border-radius: 0 0 0 35px;
-            background-color: color(third-light);
+            // background-color: color(third-light);
             // clip-path: polygon(0 0, 75% 0%, 100% 100%, 0% 100%);
 
             span{
@@ -107,9 +107,6 @@ $colors: (
         width: 100%;
         justify-content: center;
         align-items: center;        
-        border-radius: 0 35px 35px 0;
-        background-color: color(bright);
-        border: 8px solid color(third-light);
 
         h1{
             color: color(secondary);
@@ -205,7 +202,6 @@ $colors: (
             margin-top: 0;
             display: flex;
             flex-direction: column;
-            background-color: color(secondary);
             border-radius: 0px;
             box-shadow: none;
             box-sizing: border-box;
@@ -221,7 +217,6 @@ $colors: (
             .leftColumn{
                 display: none;
                 flex: 1 1 10%;
-                background-color: color(primary);
                 height: 60px;
                 order: 2;
 
@@ -232,7 +227,6 @@ $colors: (
                     align-items: center;
                     justify-content: center;
                     border-radius: 0px;
-                    background-color: color(primary);
                     clip-path: 0;
                     clip-path: none;
 
@@ -251,7 +245,6 @@ $colors: (
                     justify-content: space-around;
                     padding-bottom: 0.5em;
                     border-radius: 0 0 0 0px;
-                    background-color: color(third-light);
                     clip-path: none;
                 }
             }
