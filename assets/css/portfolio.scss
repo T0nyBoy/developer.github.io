@@ -128,7 +128,8 @@ $colors: (
 
             .imageForSliderStatic{
                 height: 90%;
-                width: fit-content;
+                margin-top: auto;
+                margin-bottom: auto;
                 box-shadow: none;
             }
         }
