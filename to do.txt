@@ -1,10 +1,6 @@
 1. blog html - OK
 2. about - OK
-<<<<<<< HEAD
 3. portfolio with slider - ok
-=======
-3. portfolio with slider make photos
->>>>>>> b014fb22edf88267b216586de983d089ccde8106
     update portfolio
 . Glassmorphism
 .X on contact form
