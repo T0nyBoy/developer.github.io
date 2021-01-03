@@ -129,6 +129,9 @@
   }
   .section .rightSectionPart .imageForSliderStatic {
     height: 90%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     margin-top: auto;
     margin-bottom: auto;
     -webkit-box-shadow: none;
