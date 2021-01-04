@@ -116,8 +116,6 @@ body {
           backdrop-filter: blur(4px);
   border-radius: 70px;
   color: #cacaca;
-  overflow-y: scroll;
-  scrollbar-width: none;
 }
 
 .service2 {
@@ -128,8 +126,6 @@ body {
           backdrop-filter: blur(4px);
   border-radius: 70px;
   color: #cacaca;
-  overflow-y: scroll;
-  scrollbar-width: none;
 }
 
 .service3 {
@@ -140,8 +136,6 @@ body {
           backdrop-filter: blur(4px);
   border-radius: 70px;
   color: #cacaca;
-  overflow-y: scroll;
-  scrollbar-width: none;
 }
 
 .innerBox:hover {
