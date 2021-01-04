@@ -1,4 +1,4 @@
-let url = "https://script.google.com/macros/s/AKfycbyDWBZHCpajSAwcJjXgf-K5nqy6Hvx5s5mmzmKiGmluXZv8b5g/exec";
+let url = "https://script.google.com/macros/s/AKfycbwUUZAC5Th1siwmkeFKYvX7U_3dinXZBG_ZJzdUsKrEM__uCi0/exec";
 
 let tabletContent = document.querySelector(".tabletContent");
 

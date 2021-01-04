@@ -65,11 +65,10 @@ $colors: (
     padding: 0 1.5em;
     justify-content: flex-end;
     align-items: center;
-    border-bottom: 2px solid color(bright-dark);
+    border-bottom: 1px solid color(bright-dark);
     z-index: 20;
 
     background: color(third-blur);
-    box-shadow: 0 2px 9px 0 color(accent-light);
     backdrop-filter: blur(4px);
 
     transition: background-color 0.5s;

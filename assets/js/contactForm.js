@@ -28,7 +28,8 @@ document.addEventListener('submit', e => {
   // Antispam method
   if(checkbox.checked!==true){
     formMethod="POST";
-    formAction="https://script.google.com/macros/s/AKfycbxZiO9RpgcltEwbFy9k89tA6PbbCp2PHofuZ1FpYK3awPwJBKq_/exec"
+    formAction="https://script.google.com/macros/s/AKfycbxFv3sZBEFDPN1D91W-0vy6_aAScedoMw_f6YYzvw/exec"
+    
   } 
   else if(checkbox.checked===true){
     formMethod="POST";

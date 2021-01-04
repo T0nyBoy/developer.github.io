@@ -35,10 +35,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 2px solid #cacaca;
+  border-bottom: 1px solid #cacaca;
   z-index: 20;
-  -webkit-box-shadow: 0 2px 9px 0 #3f403c;
-          box-shadow: 0 2px 9px 0 #3f403c;
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   -webkit-transition: background-color 0.5s;
