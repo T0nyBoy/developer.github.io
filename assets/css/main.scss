@@ -20,7 +20,7 @@ $colors: (
     third-dark-blur: darken(#5a5560, 5%),
     accent-light: lighten(#323330, 5%),
     accent-dark: darken(#323330, 5%),
-    bright-dark: darken(#f0f0f0, 15%),
+    bright-dark: darken(#f0f0f0, 5%),
     
     redish: #fb4848,
     redish-trans: #fb4848ce,
@@ -54,12 +54,9 @@ body{
     padding:0;
     width: 100%;
     height: 100%;
-    font-family: monospace;
-    font-size: 14px;
-    // background: linear-gradient(45deg, #f0db4f 25%, #f0f0f0 25%, #f0f0f0 50%, #f0db4f 50%, #f0db4f 75%, #f0f0f0 75%, #f0f0f0 100%) no-repeat center center fixed;
-    // background: linear-gradient(45deg,color(third)25%, color(primary) 60%, color(accent) 75%) no-repeat center center fixed;
+    font-family: Rubik;
     background-color: #f0f0f0;
-    background: linear-gradient(135deg, rgba(240,240,240,1) 0%, rgb(125, 125, 125) 100%) no-repeat center center fixed;
+    background: linear-gradient(135deg, rgba(240,240,240,1) 0%, rgb(199, 199, 199) 100%) no-repeat center center fixed;
 }
 
 .homeBody{
@@ -68,20 +65,9 @@ body{
     padding:0;
     width: 100%;
     height: 100vh;
-    // background: linear-gradient(45deg,color(third)25%, color(primary) 60%, color(accent) 75%) no-repeat center center fixed;
-    // background-image: repeating-linear-gradient(to bottom,
-    // // rgba(255, 255, 255, 0.1)
-    // color(primary) 0px,
-    // transparent 4px);
-    // background-color: color(accent);
-    // background:
-    // linear-gradient(135deg, hsla(35, 95%, 55%, 1) 0%, hsla(35, 95%, 55%, 0) 70%),
-    // linear-gradient(25deg, hsla(140, 90%, 50%, 1) 10%, hsla(140, 90%, 50%, 0) 80%),
-    // linear-gradient(315deg, hsla(225, 95%, 50%, 1) 15%, hsla(225, 95%, 50%, 0) 80%),
-    // linear-gradient(245deg, hsla(340, 100%, 55%, 1) 100%, hsla(340, 100%, 55%, 0) 70%);
     background: url(/assets/photos/guille-pozzi-bInJ2wIkITo-unsplash.jpg) no-repeat center center fixed;
     background-size: cover;
-    opacity: 0.8;
+    opacity: 0.75;
     top: 0;
     right: 0;
     position: absolute;
@@ -145,6 +131,8 @@ body{
     backdrop-filter: blur(2px);
     border-radius: 70px;
     color: color(bright-dark);
+    box-shadow: 3px 3px 8px color(accent),
+            -3px -3px 8px color(bright);
 }
 
 .service2{
@@ -153,6 +141,8 @@ body{
     backdrop-filter: blur(2px);
     border-radius: 70px;
     color: color(bright-dark);
+    box-shadow: 5px 5px 12px color(accent),
+            -5px -5px 12px color(bright);
 }
 
 .service3{
@@ -161,6 +151,8 @@ body{
     backdrop-filter: blur(2px);
     border-radius: 70px;
     color: color(bright-dark);
+    box-shadow: 3px 3px 8px color(accent),
+            -3px -3px 8px color(bright);
 }
 
 .innerBox:hover{
@@ -235,7 +227,6 @@ body{
                 transition: all 00ms ease-in;
             }
         }
-
         
     }
 
@@ -256,5 +247,9 @@ body{
         .innexBoxItems{
             transform: rotate(0deg);
         }
+    }
+
+    .service1, .service2, .service3{
+        color: color(accent-light);
     }
 }

@@ -1,5 +1,4 @@
 1. change portfolio page 
-2. change logo
 3. database blog as neumorphism tabs
 6. Google Analytics
 7. clear script of every page and let only whats needed

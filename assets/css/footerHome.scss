@@ -52,7 +52,7 @@ $colors: (
 
     justify-content: space-between;
     align-items: center;
-    color: color(bright-dark);
+    color: color(accent);
 
     font-size: 1.3em;
 }
@@ -65,4 +65,10 @@ $colors: (
 .footerItemHome  a{
     color: inherit;
     text-decoration: none;
+}
+
+@media(max-width:800px){
+    .footerItemHome  a{
+        color: color(bright-dark);
+    }
 }

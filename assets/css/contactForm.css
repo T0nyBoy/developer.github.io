@@ -1,6 +1,6 @@
 .mainBox {
-  width: 530px;
-  height: 530px;
+  width: 520px;
+  height: 520px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,7 +8,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 2em auto;
+  margin: 1em auto 2em auto;
   border-radius: 35px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -108,8 +108,9 @@
 }
 
 .mainBox .mainContactFrame h1 {
-  color: #46344E;
+  color: #f0f0f0;
   font-weight: 900;
+  font-size: 24px;
 }
 
 .mainBox .mainContactFrame #contactForm {
@@ -134,12 +135,15 @@
 }
 
 .mainBox .mainContactFrame #contactForm #userName, .mainBox .mainContactFrame #contactForm #email, .mainBox .mainContactFrame #contactForm #phone {
-  width: 260px;
+  width: 230px;
   height: 2.2em;
   border-radius: 25px;
   padding-left: 0.7em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: none;
+  -webkit-box-shadow: 3px 3px 8px #323330, -3px -3px 8px #f0f0f0;
+          box-shadow: 3px 3px 8px #323330, -3px -3px 8px #f0f0f0;
 }
 
 .mainBox .mainContactFrame #contactForm #userName:focus, .mainBox .mainContactFrame #contactForm #email:focus, .mainBox .mainContactFrame #contactForm #phone:focus {
@@ -152,6 +156,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 260px;
+  border: none;
   border-radius: 8px;
   padding: 0 0.3em;
   font-family: "Rubik";
@@ -159,6 +164,8 @@
           box-sizing: border-box;
   resize: none;
   text-overflow: scroll;
+  -webkit-box-shadow: 3px 3px 8px #323330, -3px -3px 8px #f0f0f0;
+          box-shadow: 3px 3px 8px #323330, -3px -3px 8px #f0f0f0;
 }
 
 .mainBox .mainContactFrame #contactForm #message:focus {
@@ -176,26 +183,32 @@
 }
 
 .mainBox .mainContactFrame #contactForm .submitBtn {
-  width: 260px;
+  width: 180px;
   height: 2em;
-  background-color: #67616e;
-  color: #F0DB4F;
+  background-color: whitesmoke;
+  color: #5a5560;
   border-radius: 8px;
   border: none;
   font-size: 1.1em;
   font-weight: bold;
   -webkit-transition: background-color 120ms ease-in;
   transition: background-color 120ms ease-in;
+  -webkit-box-shadow: 3px 3px 8px #323330, -3px -3px 8px #f0f0f0;
+          box-shadow: 3px 3px 8px #323330, -3px -3px 8px #f0f0f0;
+}
+
+.mainBox .mainContactFrame #contactForm .submitBtn:focus {
+  -webkit-box-shadow: 0 0 6px #543e5d;
+          box-shadow: 0 0 6px #543e5d;
 }
 
 .mainBox .mainContactFrame #contactForm .submitBtn:hover {
-  background-color: #4d4952;
+  background-color: #67616e;
+  color: #F0DB4F;
 }
 
 .mainBox .mainContactFrame #contactForm .submitBtn:active {
-  background-color: #543e5d;
-  -webkit-box-shadow: inset 2px 2px 8px darkslategray;
-          box-shadow: inset 2px 2px 8px darkslategray;
+  background-color: #67616e;
 }
 
 .mainBox .mainContactFrame #contactForm input, .mainBox .mainContactFrame #contactForm #submitBtn, .mainBox .mainContactFrame #contactForm #message {

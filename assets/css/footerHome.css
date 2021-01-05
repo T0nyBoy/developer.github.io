@@ -16,7 +16,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #cacaca;
+  color: #323330;
   font-size: 1.3em;
 }
 
@@ -27,5 +27,11 @@
 .footerItemHome a {
   color: inherit;
   text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .footerItemHome a {
+    color: #cacaca;
+  }
 }
 /*# sourceMappingURL=footerHome.css.map */

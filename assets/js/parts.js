@@ -13,7 +13,7 @@ head.innerHTML =
 `
 <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Services Web Site</title>
+        <title>Tony dev</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/assets/css/menu.css">
@@ -27,7 +27,7 @@ head.innerHTML =
         <link rel="stylesheet" href="/assets/css/about.css">
         <link rel="stylesheet" href="/assets/css/slider.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-        <link rel="icon" href="/assets/photos/rubik_logo_AR.png">
+        <link rel="icon" href="/assets/photos/nodus_logo_small.png">
 `
 }
 // ---------------------------------------------------------------------------------------------------------------------------
@@ -38,7 +38,7 @@ if(menu){
 menu.innerHTML = 
 `
 <span class="forSmallScreenMenuIcon"></span>
-            <div class="menuItem logo"><a href="/index.html"><img src="/assets/photos/rubik_logo_AR.png" class="menuLogoImage"></a></div>
+            <div class="menuItem logo"><a href="/index.html"><img src="/assets/photos/nodus_logo_small.png" class="menuLogoImage"></a></div>
             <div class="menuItem button"><a href="/index.html">Home</a></div>
             <div class="menuItem button"><a href="/blog.html">Blog</a></div>
             <div class="menuItem button"><a href="/portfolio.html">What I Do</a></div>
@@ -90,7 +90,7 @@ contactFormHTML.innerHTML =
             <div class="mainBox">
                 <div class="leftColumn">
                     <div class="logoBox">
-                        <img src="/assets/photos/rubik_logo_AR.png" class="contactFormImageLogo">
+                        <img src="/assets/photos/nodus_logo_small.png" class="contactFormImageLogo">
                     </div>
                     <div class="otherContactWays">
                         <span><a href="https://github.com/T0nyBoy" target="_blank"><i class="fab fa-github-square"></i></a></span>
@@ -101,7 +101,7 @@ contactFormHTML.innerHTML =
     
     
                 <div class="mainContactFrame">
-                    <h1>Get in touch</h1>
+                    <h1>Send a message</h1>
                     <form id="contactForm" method="" data-email="from_email@example.com"
                     action="">
                       <p>
