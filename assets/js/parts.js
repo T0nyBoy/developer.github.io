@@ -90,7 +90,7 @@ contactFormHTML.innerHTML =
             <div class="mainBox">
                 <div class="leftColumn">
                     <div class="logoBox">
-                        <img src="/assets/photos/nodus_logo_small.png" class="contactFormImageLogo">
+                        <img src="/assets/photos/nodus_logo_small_white.png" class="contactFormImageLogo">
                     </div>
                     <div class="otherContactWays">
                         <span><a href="https://github.com/T0nyBoy" target="_blank"><i class="fab fa-github-square"></i></a></span>
