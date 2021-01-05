@@ -1,3 +1,51 @@
+.portfolioNavbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  margin-top: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0.6em;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 70vw;
+  font-size: 0.9em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.portfolioNavbarItem {
+  width: auto;
+  height: 1.9em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.portfolioNavbarItem:hover {
+  cursor: pointer;
+}
+
+.portfolioNavbarItem::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #252624;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.portfolioNavbarItem:hover::after {
+  width: 100%;
+}
+
 .mainBodyContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,12 +56,12 @@
           flex-direction: row;
   width: 75vw;
   margin: 0 auto;
-  margin-top: 4em;
+  margin-top: 3em;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-bottom: 1em;
+  margin-bottom: 4em;
 }
 
 .mainElement {
@@ -28,6 +76,7 @@
       -ms-flex: 1 1 30vw;
           flex: 1 1 30vw;
   padding: 0 0.5em;
+  margin-top: 1.5em;
   height: 30vw;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -54,8 +103,8 @@
 .portfolioImage {
   margin-top: auto;
   margin-bottom: auto;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
 }
 
 .mainElement > .mainParagraph {
@@ -165,6 +214,9 @@
 /* FOR SMALLER SCREENS */
 /* -------------------------------------- */
 @media (max-width: 801px) {
+  .portfolioNavbarItem {
+    display: none;
+  }
   .mainBodyContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -176,6 +228,12 @@
     width: 75vw;
     margin-bottom: 3em;
   }
+  .mainElement {
+    margin-bottom: 1.2em;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
   .mainElement:nth-child(2n) {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -186,6 +244,9 @@
             justify-content: flex-start;
     border-bottom: 1px solid rgba(150, 170, 170, 0.583);
     margin-bottom: 1em;
+  }
+  .headerContent {
+    padding-bottom: 0.2em;
   }
   /* Element order */
   .element1 {
