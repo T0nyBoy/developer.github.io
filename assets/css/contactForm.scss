@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 //table storing lots of variables
 $colors: (
     primary: #F0DB4F,
@@ -46,9 +46,10 @@ $colors: (
     border-radius: 35px;
     box-sizing: border-box;
     
-    background: #f0f0f037;
+    background: #f0f0f053;
     // box-shadow: 0 8px 14px 0 color(accent-light);
     backdrop-filter: blur(8px);
+    
 
     .leftColumn{
         display: flex;
@@ -68,11 +69,12 @@ $colors: (
             overflow: visible;
 
             color: color(secondary);
-            font-family: "Rubik";
+            // font-family: "Rubik";
             font-size: 3.2em;
             writing-mode: vertical-rl;
             text-align: center;
             line-height: 1.5;
+
 
             .contactFormImageLogo{position: relative;
                 top: 0em;
@@ -124,13 +126,14 @@ $colors: (
 
 
         #userName, #email, #phone{
-            border: 2px solid color(secondary);
+            // border: 2px solid color(secondary);
             width: 260px;
             height: 2.2em;
             border-radius: 25px;
             padding-left: 0.7em;
-            font-family: "Rubik";
+            // font-family: "Rubik";
             box-sizing: border-box;
+            
 
             &:focus{
                 box-shadow: 0 0 6px color(secondary-light);
@@ -141,7 +144,7 @@ $colors: (
         #message{
             display: flex;
             width: 260px;
-            border: 2px solid color(secondary);
+            // border: 2px solid color(secondary);
             border-radius: 8px;
             padding: 0 0.3em;
             font-family: "Rubik";
@@ -175,6 +178,7 @@ $colors: (
                font-size: 1.1em;
                font-weight: bold;
                transition: background-color 120ms ease-in;
+               
 
                &:hover{
                    background-color: color(third-dark);

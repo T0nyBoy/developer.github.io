@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 .mainBox {
   width: 530px;
   height: 530px;
@@ -13,7 +12,7 @@
   border-radius: 35px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #f0f0f037;
+  background: #f0f0f053;
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
 }
@@ -48,7 +47,6 @@
   border-radius: 35px 0 0 0;
   overflow: visible;
   color: #46344E;
-  font-family: "Rubik";
   font-size: 3.2em;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
@@ -136,12 +134,10 @@
 }
 
 .mainBox .mainContactFrame #contactForm #userName, .mainBox .mainContactFrame #contactForm #email, .mainBox .mainContactFrame #contactForm #phone {
-  border: 2px solid #46344E;
   width: 260px;
   height: 2.2em;
   border-radius: 25px;
   padding-left: 0.7em;
-  font-family: "Rubik";
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -156,7 +152,6 @@
   display: -ms-flexbox;
   display: flex;
   width: 260px;
-  border: 2px solid #46344E;
   border-radius: 8px;
   padding: 0 0.3em;
   font-family: "Rubik";

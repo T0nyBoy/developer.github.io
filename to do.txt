@@ -1,7 +1,5 @@
-1. update portfolio
-
-4. setup the google sheets for raftopoulos.a
-5. update JS to match API links with new google sheet API links
+1. change portfolio page 
+2. change logo
+3. database blog as neumorphism tabs
 6. Google Analytics
 7. clear script of every page and let only whats needed
-

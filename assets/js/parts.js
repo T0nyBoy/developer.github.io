@@ -41,7 +41,7 @@ menu.innerHTML =
             <div class="menuItem logo"><a href="/index.html"><img src="/assets/photos/rubik_logo_AR.png" class="menuLogoImage"></a></div>
             <div class="menuItem button"><a href="/index.html">Home</a></div>
             <div class="menuItem button"><a href="/blog.html">Blog</a></div>
-            <div class="menuItem button"><a href="/portfolio.html">Portfolio</a></div>
+            <div class="menuItem button"><a href="/portfolio.html">What I Do</a></div>
             <div class="menuItem button"><a href="/about.html">About</a></div>
             <div class="menuItem button getInTouch"><a href="#">Get in touch</a></div>
 `
@@ -101,7 +101,7 @@ contactFormHTML.innerHTML =
     
     
                 <div class="mainContactFrame">
-                    <h1>Contact Us</h1>
+                    <h1>Get in touch</h1>
                     <form id="contactForm" method="" data-email="from_email@example.com"
                     action="">
                       <p>
