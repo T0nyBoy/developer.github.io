@@ -1,5 +1,5 @@
-1. change portfolio page like grannys kitchen
-2. menu buttons like buttons
+1.portfolio page nav add: about this site
 3. database blog as neumorphism tabs
 6. Google Analytics
 7. clear script of every page and let only whats needed
+8. update content
