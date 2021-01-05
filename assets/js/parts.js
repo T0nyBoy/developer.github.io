@@ -27,7 +27,7 @@ head.innerHTML =
         <link rel="stylesheet" href="/assets/css/about.css">
         <link rel="stylesheet" href="/assets/css/slider.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-        <link rel="icon" href="/assets/photos/nodus_logo_small.png">
+        <link rel="icon" href="/assets/photos/nodus_logo_small_white.png">
 `
 }
 // ---------------------------------------------------------------------------------------------------------------------------
@@ -119,7 +119,7 @@ contactFormHTML.innerHTML =
                       </p>
     
                       <p class="robot">
-                        <label>I Am A Robot!</label>
+                        <label>I am not human!!!</label>
                         <input type="checkbox" id="imRobot" name="imRobot" value="iamRobot">
                       </p>
     

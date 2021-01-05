@@ -35,110 +35,173 @@ $colors: (
     // we can call color(primary) for example
 }
 
-.portfolioWrapper{
-    display:flex;
-    flex-direction: column;
-    width: 98vw;
-    min-width: 300px;
-    height: 78vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1.3em;
+.mainBodyContainer{
+    display: flex;
+    flex-direction: row;
+    width: 75vw;
+    margin: 0 auto;
+    margin-top: 4em;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+
+.mainElement{
+    display: flex;
+    flex-flow: column;
+    flex: 1 1 30vw;
+    // border: 2px solid black;
+    padding: 0 0.5em;
+
+    height: 30vw; 
+    justify-content: flex-start; 
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.forText{
     overflow-y: scroll;
     scrollbar-width: none;
-    scroll-snap-type: y mandatory;
-    
-    // border: 4px solid red;
 }
 
-.section{
-    display: flex;
-    flex-direction:row;
-    width: 100%;
-    height: 100%;
-    flex: 1 0 100%;
-    scroll-snap-align: start;
-    
-    // background-color: lightcoral;
+// purelly for Chrome
+.forText::-webkit-scrollbar {
+    display: none;
+}
 
-    .leftSectionPart{
+.headerContent{
+    font-size: 2em;
+}
+
+.portfolioImage{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    height: auto;
+}
+
+.mainElement>.mainParagraph{
+    text-align: justify;
+}
+
+.mainElement>.portfolioImage{
+    transform: scale(1);
+    transition: transform 500ms ease-in;
+}
+
+.mainElement>.portfolioImage:hover{
+    transform: scale(1.35);
+}
+
+/* Element order */
+.element1{
+order: 1;
+}
+.element2{
+    order: 2;
+}
+.element3{
+    order: 4;
+}
+.element4{
+    order: 3;
+}
+.element5{
+    order: 5;
+}
+.element6{
+    order: 5;
+}
+.element7{
+    order: 8;
+}
+.element8{
+    order: 7;
+}
+.element9{
+    order: 9;
+}
+.element10{
+    order: 10;
+}
+
+.element11{
+    order: 12;
+}
+.element12{
+    order: 11;
+}
+.element13{
+    order: 13;
+}
+.element14{
+    order: 14;
+}
+
+/* -------------------------------------- */
+/* FOR SMALLER SCREENS */
+/* -------------------------------------- */
+
+
+@media(max-width: 801px){
+    .mainBodyContainer{
         display: flex;
-        flex:1 0 36%;
-        order:1;
-        align-content: center;
+        flex-direction: column;
+        width: 75vw;
+        margin-bottom: 3em;
+    }
+
+    .mainElement:nth-child(2n){
+        display: flex;
+        overflow: scroll;
         justify-content: flex-start;
-        margin: 1em;
-        padding: 0.5em 1em;
-        box-sizing: content-box;
-        overflow-y: scroll;
-        scrollbar-width: none;
-        
-        box-shadow: 8px 4px 10px 0 color(accent-light);
-        backdrop-filter: blur(24px);
-        border-radius: 15px;
+
+        border-bottom: 1px solid rgba(150, 170, 170, 0.583);
+        margin-bottom: 1em;
     }
 
-    .rightSectionPart{
-        display: flex;
-        flex:1 0 60%;
-        order:2;
-        align-content: center;
-        justify-content: center;
-        box-sizing: content-box;
-        overflow: hidden;
-
-        // border: 2px solid blue;
+    /* Element order */
+.element1{
+    order: 1;
     }
-}
-
-.imageForSlider{
-    width: 100%;
-    height: fit-content;
-    margin-top: auto;
-    margin-bottom: auto;
-    box-shadow: -1em 1em 0px color(third),
-                1em -1em 0px color(third-light)   ;
-}
-
-.imageForSliderStatic{
-    width: 90%;
-    height: fit-content;
-    margin-top: auto;
-    margin-bottom: auto;
-    box-shadow: -1em 1em 0px color(third),
-                1em -1em 0px color(third-light)   ;
-}
-
-@media(max-width:700px){
-    .section{
-        flex-direction:column;
-        align-content: center;
-        justify-content: center;
-        
-        .leftSectionPart{
-            flex:1 0 58%;
-        }
-
-        .rightSectionPart{
-            flex:0 1 40%;
-
-            .imageForSlider{
-                height: 100%;
-                margin-top: auto;
-                margin-bottom: auto;
-                box-shadow: none;
-            }
-
-            .imageForSliderStatic{
-                height: 90%;
-                width: max-content;
-                margin-top: auto;
-                margin-bottom: auto;
-                box-shadow: none;
-            }
-        }
+    .element2{
+        order: 2;
+    }
+    .element3{
+        order: 3;
+    }
+    .element4{
+        order: 4;
+    }
+    .element5{
+        order: 5;
+    }
+    .element6{
+        order: 6;
+    }
+    .element7{
+        order: 7;
+    }
+    .element8{
+        order: 8;
+    }
+    .element9{
+        order: 9;
+    }
+    .element10{
+        order: 10;
+    }
+    .element11{
+        order: 11;
+    }
+    .element12{
+        order: 12;
+    }
+    .element13{
+        order: 13;
+    }
+    .element14{
+        order: 14;
     }
 
-
-   
 }
