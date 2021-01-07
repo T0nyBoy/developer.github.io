@@ -37,28 +37,59 @@ $colors: (
 .footerContainer{
     display: flex;
     width: 100%;
-    height: 2em;
+    height: 8em;
     margin-top: 1em;
-    position: fixed;
+    // position: fixed;
     bottom: 0px;
 
     padding: 0.5em 3em;
     box-sizing: border-box;
 
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 
     background-color:  color(accent-light);
-    color: color(primary);
+    color: color(bright);
     font-size: 1.3em;
 }
 
-.footerItem span{
+
+.lowerFooterItem{
+    display: flex;
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.lowerFooterItem span{
     margin: 0 0 0 0.8em;
    
 }
 
-.footerItem  a{
+.lowerFooterItem  a{
     color: inherit;
     text-decoration: none;
+}
+
+@media(max-width:800px){
+    .footerContainer{
+        height: 2em;
+        position: fixed;
+        bottom: 0px;
+        align-items: center;
+    
+    }
+
+    .lowerFooterItem{
+        display: flex;
+        width: auto;
+    }
+
+    .lowerFooterSpans{
+        display: flex;
+        padding-right: 1.2em;
+        justify-self: flex-start;
+    }
+    
 }

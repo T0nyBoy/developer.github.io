@@ -123,12 +123,12 @@ $colors: (
 }
 
 .menuItem:hover{
-    background-color: color(accent);
+    background-color: color(third-light);
 }
 
 .menuItem:hover a{
     text-decoration: none;
-    color: color(primary)
+    color: color(bright-dark)
 }
 
 .logo:hover{
@@ -301,7 +301,7 @@ but for bigger screens we want a transition to be aaplied */
 }
 
 .toTopButtonAppear:hover{
-    color: color(redish);
+    color: black;
 }
 /* ----------------------------------------------------- */
 

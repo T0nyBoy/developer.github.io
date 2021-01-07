@@ -1,4 +1,6 @@
-1.portfolio page nav add: about this site
+1.menu drop down and put about this page too
+2. finish footer skewed and higherFooterItem
+3. fix arrow to top distances
 3. database blog as neumorphism tabs
 6. Google Analytics
 7. clear script of every page and let only whats needed

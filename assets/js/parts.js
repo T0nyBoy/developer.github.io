@@ -55,17 +55,21 @@ if(footer){
 footer.innerHTML = 
 `
 <div class="footerItem">
+    <div class="lowerFooterItem">
+            <div class="lowerFooterSpans">
                 <span><a href="https://github.com/T0nyBoy" target="_blank"><i class="fab fa-github-square"></i></a></span>
                 <span><a href="https://twitter.com/T0ny_Boy" target="_blank"><i class="fab fa-twitter-square"></i></a></span>
                 <span><a href="https://www.linkedin.com/in/antonisraftopoulos/" target="_blank"><i class="fab fa-linkedin"></i></a></span>
             </div>
             <div class="footerItem getInTouch"><a href="#">Get in touch</a></div>
+    </div>
+</div>
 `
 }
 // ---------------------------------------------------------------------------------------------------------------------------
 
 
-// ------------------------------------------------FOOTER--------------------------------------------------------------------
+// ------------------------------------------------FOOTER FOR HOMEPAGE--------------------------------------------------------------------
 if(footerHome){
 footerHome.innerHTML = 
 `

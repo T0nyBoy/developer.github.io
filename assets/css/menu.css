@@ -94,12 +94,12 @@
 }
 
 .menuItem:hover {
-  background-color: #323330;
+  background-color: #67616e;
 }
 
 .menuItem:hover a {
   text-decoration: none;
-  color: #F0DB4F;
+  color: #cacaca;
 }
 
 .logo:hover {
@@ -291,7 +291,7 @@ but for bigger screens we want a transition to be aaplied */
 }
 
 .toTopButtonAppear:hover {
-  color: #fb4848;
+  color: black;
 }
 
 /* ----------------------------------------------------- */
