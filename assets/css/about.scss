@@ -59,6 +59,10 @@ $colors: (
     p{
         text-align: justify;
         text-justify: inter-word;
+
+        a{
+            text-decoration: underline;
+        }
     }
 }
 

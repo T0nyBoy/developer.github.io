@@ -32,6 +32,10 @@
   text-justify: inter-word;
 }
 
+.aboutContainer p a {
+  text-decoration: underline;
+}
+
 .forImage {
   width: 120px;
   float: left;
