@@ -53,8 +53,14 @@ menu.innerHTML =
 // ------------------------------------------------FOOTER--------------------------------------------------------------------
 if(footer){
 footer.innerHTML = 
-`
-<div class="footerItem">
+`<div class="footerWrap">
+    <div class="higherFooterItem">
+        <a href="/index.html">Home</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/portfolio.html">What I Do</a>
+        <a href="/thissite.html">About this site</a>
+    </div>
+    
     <div class="lowerFooterItem">
             <div class="lowerFooterSpans">
                 <span><a href="https://github.com/T0nyBoy" target="_blank"><i class="fab fa-github-square"></i></a></span>
@@ -63,7 +69,7 @@ footer.innerHTML =
             </div>
             <div class="footerItem getInTouch"><a href="#">Get in touch</a></div>
     </div>
-</div>
+  </div>  
 `
 }
 // ---------------------------------------------------------------------------------------------------------------------------
