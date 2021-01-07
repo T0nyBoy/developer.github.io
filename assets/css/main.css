@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin&display=swap");
 a {
   color: inherit;
   text-decoration: none;
@@ -9,7 +9,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: Rubik;
+  font-family: "Palanquin", sans-serif;
   background-color: #f0f0f0;
   background: linear-gradient(135deg, #f0f0f0 0%, #c7c7c7 100%) no-repeat center center fixed;
 }
