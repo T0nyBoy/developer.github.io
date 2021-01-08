@@ -13,6 +13,7 @@
   padding: 0;
   height: 100%;
   width: auto;
+  background-color: green;
 }
 
 .containerDynamic {
@@ -23,9 +24,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 60vw;
+  width: 90%;
   min-width: 360px;
   padding: 1em;
+  background-color: blue;
 }
 
 .topField {
@@ -147,12 +149,13 @@
           flex-direction: row;
   width: 100%;
   height: auto;
-  margin: 1em 2em;
+  margin: 1em auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: rgba(222, 184, 135, 0.469);
 }
 
 .itemsFromDb {
@@ -163,22 +166,94 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 30%;
-          flex: 0 0 30%;
-  width: 250px;
-  height: 250px;
+  width: 320px;
+  height: 320px;
   background-color: yellow;
   margin: 0.2em;
+  padding: 0.5em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.cardSideB {
+  display: none;
+}
+
+.cardSideA {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin: 0.4em auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.blogPostImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: 200px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.blogPostHeader {
+  font-weight: 900;
+  margin: 1em auto;
+}
+
+.itemsFromDb:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.itemsFromDb:hover .cardSideB {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 0.1em 0.2em;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   overflow-y: scroll;
+  scrollbar-width: none;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
-summary {
-  font-weight: bold;
-  cursor: pointer;
+.itemsFromDb:hover .cardSideA {
+  display: none;
 }
 
-details p {
-  cursor: default;
+.blogPostDate {
+  font-size: 0.8em;
 }
 /*# sourceMappingURL=blog.css.map */

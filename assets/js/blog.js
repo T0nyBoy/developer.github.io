@@ -93,10 +93,12 @@ function mainDisplay(page=1,theArray){
         tabletContent.innerHTML+=
         // ----------------------ONLY THESE SHOULD CHANGE----------------------------
         `
-            <details class="itemsFromDb">
-            <summary>${theArray[i].Header} - ${theArray[i].Date}</summary>
-            <p>${theArray[i].Content}</p>
-            </details>
+            <div class="itemsFromDb">
+            <img class="blogPostImage" src="${theArray[i].Image}>
+            <div class="blogPostHeader">${theArray[i].Header}</div>
+            <div class="blogPostContent">${theArray[i].Content}</div>
+            <div class="blogPostDate">Posted on: ${theArray[i].Date}</div>
+            </div>
         `
         // --------------------------------------------------------------------------
             };
@@ -109,10 +111,17 @@ function mainDisplay(page=1,theArray){
     tabletContent.innerHTML+=
     // ----------------------ONLY THESE SHOULD CHANGE----------------------------
     `
-            <details class="itemsFromDb">
-            <summary>${theArray[i].Header} - ${theArray[i].Date}</summary>
-            <p>${theArray[i].Content}</p>
-            </details>
+    <div class="itemsFromDb">
+        <div class="cardSideA">
+            <img class="blogPostImage" src="${theArray[i].Image}">
+            <h3 class="blogPostHeader">${theArray[i].Header}</h3>
+        </div>
+
+        <div class="cardSideB">
+            <p class="blogPostContent">${theArray[i].Content}</p>
+            <p class="blogPostDate">Posted on: ${theArray[i].Date}</p>
+        </div>    
+    </div>
         `
     // --------------------------------------------------------------------------
     };

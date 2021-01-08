@@ -41,19 +41,21 @@ $colors: (
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3em ;
+    margin: 3em;
     margin-bottom: 5em;
     padding: 0;
     height: 100%;
     width: auto;
+    background-color: green;
 }
 
 .containerDynamic{
     display: flex;
     flex-direction: column;
-    width: 60vw;
+    width: 90%;
     min-width: 360px;
     padding: 1em;
+    background-color: blue;
 }
 
 .topField{
@@ -142,36 +144,86 @@ $colors: (
     flex-direction: row;
     width: 100%;
     height: auto;
-    margin: 1em 2em;
+    margin: 1em auto;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    background-color: rgba(222, 184, 135, 0.469);
 }
 
 .itemsFromDb{
     display: flex;
     flex-direction: column;
-    flex: 0 0 30%;
-    width: 250px;
-    height: 250px;
+    width: 320px;
+    height: 320px;
     background-color: yellow;
-    // border-bottom: 1px solid lightgray;
     margin: 0.2em;
-    overflow-y: scroll;
-    // padding: 0.5em;
-    // cursor: pointer;
-    // border-radius: 0em 0em;
-    // background: #f0f0f037;
-    // // box-shadow: 0 0 4px 0 color(accent-light);
-    // backdrop-filter: blur(8px);
+    padding: 0.5em;
+    box-sizing: border-box;
+    // overflow-y: scroll;
+    justify-content: center;
+    align-content: center;
+    
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
+
 
 // -------------HTML ITEMS FROM JS------------------------------
 
-summary{
-    font-weight: bold;
-    cursor: pointer;
+.cardSideB{
+    display: none;
 }
 
-details p{
-    cursor: default;
+
+.cardSideA{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 0.4em auto;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.blogPostImage{
+    display:flex;
+    width: auto;
+    height: 200px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.blogPostHeader{
+    font-weight: 900;
+    margin: 1em auto;
+}
+
+
+// --------Rotate----------
+
+.itemsFromDb:hover{
+    transform: rotateY(180deg);
+}
+
+.itemsFromDb:hover .cardSideB{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 0.1em 0.2em;
+    align-content: flex-start;
+    box-sizing: border-box;
+    overflow-y: scroll;
+
+    scrollbar-width: none;
+    transform: rotateY(180deg);
+}
+
+
+.itemsFromDb:hover .cardSideA{
+    display: none;
+}
+
+.blogPostDate{
+    font-size: 0.8em;
 }
