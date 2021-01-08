@@ -1,5 +1,4 @@
-1. menu drop down and put about this page too
-3. database blog as neumorphism tabs
+3. database blog as neumorphism or tabs
 6. Google Analytics
 7. clear script of every page and let only whats needed
 8. update content

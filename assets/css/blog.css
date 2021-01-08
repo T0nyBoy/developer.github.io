@@ -88,27 +88,6 @@
   margin-left: 1em;
 }
 
-.tabletContent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 1em 2em;
-}
-
-.itemsFromDb {
-  margin: 0.2em;
-  padding: 0.5em;
-  cursor: pointer;
-  border-radius: 0em 0em;
-  background: #f0f0f037;
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
-}
-
 .forPagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,6 +135,42 @@
 .noSearchResultBackToContents {
   cursor: pointer;
   color: #543e5d;
+}
+
+.tabletContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: auto;
+  margin: 1em 2em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.itemsFromDb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  width: 250px;
+  height: 250px;
+  background-color: yellow;
+  margin: 0.2em;
+  overflow-y: scroll;
 }
 
 summary {

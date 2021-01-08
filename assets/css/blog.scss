@@ -99,22 +99,6 @@ $colors: (
     margin-left: 1em;
 }
 
-.tabletContent{
-    display: flex;
-    flex-direction: column;
-    margin: 1em 2em;
-}
-
-.itemsFromDb{
-    // border-bottom: 1px solid lightgray;
-    margin: 0.2em;
-    padding: 0.5em;
-    cursor: pointer;
-    border-radius: 0em 0em;
-    background: #f0f0f037;
-    // box-shadow: 0 0 4px 0 color(accent-light);
-    backdrop-filter: blur(8px);
-}
 
 .forPagination{
     display: flex;
@@ -150,6 +134,36 @@ $colors: (
     color: color(secondary-light);
 }
 
+// -------------------------------------------For Blog Content-------------------------------------------
+
+
+.tabletContent{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin: 1em 2em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.itemsFromDb{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 30%;
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+    // border-bottom: 1px solid lightgray;
+    margin: 0.2em;
+    overflow-y: scroll;
+    // padding: 0.5em;
+    // cursor: pointer;
+    // border-radius: 0em 0em;
+    // background: #f0f0f037;
+    // // box-shadow: 0 0 4px 0 color(accent-light);
+    // backdrop-filter: blur(8px);
+}
 
 // -------------HTML ITEMS FROM JS------------------------------
 
