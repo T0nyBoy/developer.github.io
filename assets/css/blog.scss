@@ -167,7 +167,7 @@ $colors: (
 
     
     background: #f0f0f053;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(3px);
 }
 
 
@@ -175,6 +175,7 @@ $colors: (
 
 .cardSideB{
     display: none;
+    z-index: 10;
 }
 
 
@@ -186,6 +187,7 @@ $colors: (
     margin: 0.4em auto;
     justify-content: center;
     box-sizing: border-box;
+    z-index: 10;
 }
 
 .blogPostImage{
