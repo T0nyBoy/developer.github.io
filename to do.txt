@@ -1,4 +1,4 @@
-3. database blog as neumorphism tabs (transparent like small glasses), hide scrollbar for chrome etc
+3. database blog as neumorphism tabs
 4. everywhere background should be with some abstract colours
 6. Google Analytics
 7. clear script of every page and let only whats needed

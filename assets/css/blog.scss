@@ -46,7 +46,8 @@ $colors: (
     padding: 0;
     height: 100%;
     width: auto;
-    background-color: green;
+    background-image: linear-gradient(45deg, #b3d3db 25%, #f0f0f0 25%, #f0f0f0 50%, #b3d3db 50%, #b3d3db 75%, #f0f0f0 75%, #f0f0f0 100%);
+    background-size: 56.57px 56.57px;
 }
 
 .containerDynamic{
@@ -55,7 +56,6 @@ $colors: (
     width: 90%;
     min-width: 360px;
     padding: 1em;
-    background-color: blue;
 }
 
 .topField{
@@ -115,7 +115,7 @@ $colors: (
     justify-content: center;
     border: 1px solid color(third);
     margin: 0 0.2em;
-    padding: 0.1em;
+    padding: 0.2em;
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -147,7 +147,6 @@ $colors: (
     margin: 1em auto;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: rgba(222, 184, 135, 0.469);
 }
 
 .itemsFromDb{
@@ -157,14 +156,18 @@ $colors: (
     height: 320px;
     // background-color: yellow;
     margin: 0.2em;
+    margin-bottom: 1em;
     padding: 0.5em;
     box-sizing: border-box;
-    // overflow-y: scroll;
     justify-content: center;
     align-content: center;
     
     transition: transform 0.8s;
     transform-style: preserve-3d;
+
+    
+    background: #f0f0f053;
+    backdrop-filter: blur(8px);
 }
 
 
@@ -198,6 +201,10 @@ $colors: (
     margin: 1em auto;
 }
 
+.blogPostContent{
+    text-align: justify;
+}
+
 
 // --------Rotate----------
 
@@ -217,6 +224,10 @@ $colors: (
 
     scrollbar-width: none;
     transform: rotateY(180deg);
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
 }
 
 

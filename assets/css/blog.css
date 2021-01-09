@@ -13,7 +13,8 @@
   padding: 0;
   height: 100%;
   width: auto;
-  background-color: green;
+  background-image: linear-gradient(45deg, #b3d3db 25%, #f0f0f0 25%, #f0f0f0 50%, #b3d3db 50%, #b3d3db 75%, #f0f0f0 75%, #f0f0f0 100%);
+  background-size: 56.57px 56.57px;
 }
 
 .containerDynamic {
@@ -27,7 +28,6 @@
   width: 90%;
   min-width: 360px;
   padding: 1em;
-  background-color: blue;
 }
 
 .topField {
@@ -118,7 +118,7 @@
           justify-content: center;
   border: 1px solid #5a5560;
   margin: 0 0.2em;
-  padding: 0.1em;
+  padding: 0.2em;
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -155,7 +155,6 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-color: rgba(222, 184, 135, 0.469);
 }
 
 .itemsFromDb {
@@ -169,6 +168,7 @@
   width: 320px;
   height: 320px;
   margin: 0.2em;
+  margin-bottom: 1em;
   padding: 0.5em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -183,6 +183,9 @@
   transition: transform 0.8s, -webkit-transform 0.8s;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+  background: #f0f0f053;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
 }
 
 .cardSideB {
@@ -222,6 +225,10 @@
   margin: 1em auto;
 }
 
+.blogPostContent {
+  text-align: justify;
+}
+
 .itemsFromDb:hover {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
@@ -246,6 +253,10 @@
   scrollbar-width: none;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+}
+
+.itemsFromDb:hover .cardSideB::-webkit-scrollbar {
+  display: none;
 }
 
 .itemsFromDb:hover .cardSideA {
