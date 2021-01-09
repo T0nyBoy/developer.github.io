@@ -175,7 +175,7 @@ $colors: (
 @media(max-width:800px){
     .itemsFromDb{
     transition: transform 0.8s;
-    transform-style: preserve-3d;
+    // transform-style: preserve-3d;
 
     backdrop-filter: blur(3px);
     

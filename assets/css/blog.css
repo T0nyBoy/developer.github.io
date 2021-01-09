@@ -195,8 +195,6 @@
     transition: -webkit-transform 0.8s;
     transition: transform 0.8s;
     transition: transform 0.8s, -webkit-transform 0.8s;
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     border: 5px solid lightgrey;
