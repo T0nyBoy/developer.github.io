@@ -206,8 +206,14 @@ $colors: (
     margin: 1em auto;
 }
 
-.blogPostContent{
+
+p{
     text-align: justify;
+    text-justify: inter-word;
+
+    a{
+        text-decoration: underline;
+    }
 }
 
 

@@ -25,6 +25,7 @@ head.innerHTML =
         <link rel="stylesheet" href="/assets/css/blog.css">
         <link rel="stylesheet" href="/assets/css/portfolio.css">
         <link rel="stylesheet" href="/assets/css/about.css">
+        <link rel="stylesheet" href="/assets/css/aboutthissite.css">
         <link rel="stylesheet" href="/assets/css/slider.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
         <link rel="icon" href="/assets/photos/nodus_logo_small_white.png">
@@ -58,7 +59,7 @@ footer.innerHTML =
         <a href="/index.html">Home</a>
         <a href="/blog.html">Blog</a>
         <a href="/portfolio.html">What I Do</a>
-        <a href="/thissite.html">About this site</a>
+        <a href="/aboutthissite.html">About this site</a>
     </div>
     
     <div class="lowerFooterItem">

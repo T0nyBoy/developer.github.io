@@ -233,8 +233,13 @@
   margin: 1em auto;
 }
 
-.blogPostContent {
+p {
   text-align: justify;
+  text-justify: inter-word;
+}
+
+p a {
+  text-decoration: underline;
 }
 
 .itemsFromDb:hover {

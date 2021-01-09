@@ -1,4 +1,6 @@
-4. everywhere background should be with some abstract colours
+1. about this site content and page xreate
+2. what i do fix page and content
+3. blog content
 6. Google Analytics
 7. clear script of every page and let only whats needed
 8. update content
