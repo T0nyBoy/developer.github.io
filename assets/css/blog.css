@@ -198,12 +198,7 @@
     transition: -webkit-transform 0.8s;
     transition: transform 0.8s;
     transition: transform 0.8s, -webkit-transform 0.8s;
-    -webkit-backdrop-filter: blur(3px);
-            backdrop-filter: blur(3px);
     border: 2px solid lightgrey;
-    border-radius: 0px;
-    -webkit-box-shadow: none;
-            box-shadow: none;
     -webkit-backdrop-filter: none;
             backdrop-filter: none;
   }
@@ -224,6 +219,7 @@
   width: 100%;
   height: auto;
   margin: 0.4em auto;
+  padding: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -267,7 +263,7 @@
           flex-direction: column;
   width: 100%;
   height: auto;
-  padding: 0.1em 0.2em;
+  padding: 0;
   -ms-flex-line-pack: start;
       align-content: flex-start;
   -webkit-box-sizing: border-box;

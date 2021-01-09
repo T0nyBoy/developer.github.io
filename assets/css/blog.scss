@@ -176,12 +176,8 @@ $colors: (
     .itemsFromDb{
         width: 100%;
     transition: transform 0.8s;
-
-    backdrop-filter: blur(3px);
     
     border: 2px solid lightgrey;
-    border-radius: 0px;
-    box-shadow: none;
     
     backdrop-filter: none;
     }
@@ -200,6 +196,7 @@ $colors: (
     width: 100%;
     height: auto;
     margin: 0.4em auto;
+    padding: 0;
     justify-content: center;
     box-sizing: border-box;
     backdrop-filter: blur(3px);
@@ -234,7 +231,7 @@ $colors: (
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding: 0.1em 0.2em;
+    padding: 0;
     align-content: flex-start;
     box-sizing: border-box;
     overflow-y: scroll;
