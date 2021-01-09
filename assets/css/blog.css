@@ -168,7 +168,6 @@
           flex-direction: column;
   width: 320px;
   height: 320px;
-  background-color: yellow;
   margin: 0.2em;
   padding: 0.5em;
   -webkit-box-sizing: border-box;
@@ -223,12 +222,12 @@
   margin: 1em auto;
 }
 
-.itemsFromDb:active {
+.itemsFromDb:hover {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
-.itemsFromDb:active .cardSideB {
+.itemsFromDb:hover .cardSideB {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,13 +243,12 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-y: scroll;
-  z-index: 10;
   scrollbar-width: none;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
-.itemsFromDb:active .cardSideA {
+.itemsFromDb:hover .cardSideA {
   display: none;
 }
 

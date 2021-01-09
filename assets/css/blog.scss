@@ -155,7 +155,7 @@ $colors: (
     flex-direction: column;
     width: 320px;
     height: 320px;
-    background-color: yellow;
+    // background-color: yellow;
     margin: 0.2em;
     padding: 0.5em;
     box-sizing: border-box;
@@ -201,11 +201,11 @@ $colors: (
 
 // --------Rotate----------
 
-.itemsFromDb:active{
+.itemsFromDb:hover{
     transform: rotateY(180deg);
 }
 
-.itemsFromDb:active .cardSideB{
+.itemsFromDb:hover .cardSideB{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -214,14 +214,13 @@ $colors: (
     align-content: flex-start;
     box-sizing: border-box;
     overflow-y: scroll;
-    z-index: 10;
 
     scrollbar-width: none;
     transform: rotateY(180deg);
 }
 
 
-.itemsFromDb:active .cardSideA{
+.itemsFromDb:hover .cardSideA{
     display: none;
 }
 
