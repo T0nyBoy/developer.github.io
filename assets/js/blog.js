@@ -94,10 +94,15 @@ function mainDisplay(page=1,theArray){
         // ----------------------ONLY THESE SHOULD CHANGE----------------------------
         `
             <div class="itemsFromDb">
-            <img class="blogPostImage" src="${theArray[i].Image}>
-            <div class="blogPostHeader">${theArray[i].Header}</div>
-            <div class="blogPostContent">${theArray[i].Content}</div>
-            <div class="blogPostDate">Posted on: ${theArray[i].Date}</div>
+                <div class="cardSideA">
+                    <img class="blogPostImage" src="${theArray[i].Image}">
+                    <h3 class="blogPostHeader">${theArray[i].Header}</h3>
+                </div>
+
+                <div class="cardSideB">
+                    <p class="blogPostContent">${theArray[i].Content}</p>
+                    <p class="blogPostDate">Posted on: ${theArray[i].Date}</p>
+                </div>    
             </div>
         `
         // --------------------------------------------------------------------------
@@ -184,7 +189,8 @@ function searchResultsDisplay(theArray){
         if (theArray.length<1){
             tabletContent.innerHTML=
         `   <br>
-            <p>No results returned. Please use another search term.</p>
+            <div>No results returned. Please use another search term.</div>
+            <br>
         `
             }
         else if(theArray.length>=1)
@@ -194,13 +200,19 @@ function searchResultsDisplay(theArray){
 
         // -------------------------ONLY THESE SHOULD CHANGE-------------------------
         `
-            <details class="itemsFromDb">
-            <summary>${theArray[i].Header} - ${theArray[i].Date}</summary>
-            <p>${theArray[i].Content}</p>
-            </details>
-            <br>
+            <div class="itemsFromDb">
+                <div class="cardSideA">
+                    <img class="blogPostImage" src="${theArray[i].Image}">
+                    <h3 class="blogPostHeader">${theArray[i].Header}</h3>
+                </div>
+
+                <div class="cardSideB">
+                    <p class="blogPostContent">${theArray[i].Content}</p>
+                    <p class="blogPostDate">Posted on: ${theArray[i].Date}</p>
+                </div>    
+            </div>
         `
         // --------------------------------------------------------------------------
     };
-    tabletContent.innerHTML+=`<p class="noSearchResultBackToContents">Back to contents.</p>`
+    tabletContent.innerHTML+=`<div class="noSearchResultBackToContents">Back to contents.</div>`
 };
