@@ -201,11 +201,11 @@ $colors: (
 
 // --------Rotate----------
 
-.itemsFromDb:active{
+.itemsFromDb:focus{
     transform: rotateY(180deg);
 }
 
-.itemsFromDb:active .cardSideB{
+.itemsFromDb:actfocusive .cardSideB{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -220,7 +220,7 @@ $colors: (
 }
 
 
-.itemsFromDb:active .cardSideA{
+.itemsFromDb:focus .cardSideA{
     display: none;
 }
 
