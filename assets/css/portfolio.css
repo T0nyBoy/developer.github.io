@@ -96,6 +96,15 @@
   overflow: hidden;
 }
 
+ul span {
+  color: #6161fc;
+}
+
+li {
+  color: inherit;
+  list-style: none;
+}
+
 .forText {
   overflow-y: scroll;
   scrollbar-width: none;

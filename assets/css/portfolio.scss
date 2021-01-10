@@ -35,6 +35,7 @@ $colors: (
     // we can call color(primary) for example
 }
 
+
 .portfolioNavbar{
     display:flex;
     position: sticky;
@@ -107,6 +108,15 @@ $colors: (
     justify-content: flex-start; 
     align-items: flex-start;
     overflow: hidden;
+}
+
+ul span{
+    color: color(blueish-light);
+}
+
+li{
+    color: inherit;
+    list-style: none;
 }
 
 .forText{
