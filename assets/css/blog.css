@@ -263,7 +263,9 @@ p a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-y: scroll;
-  scrollbar-width: none;
+  scrollbar-width: thin;
+  scrollbar-color: #67616e rgba(0, 0, 0, 0);
+  scrollbar-arrow-color: none;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
   -webkit-backdrop-filter: blur(3px);
@@ -271,7 +273,16 @@ p a {
 }
 
 .itemsFromDb:hover .cardSideB::-webkit-scrollbar {
-  display: none;
+  width: 5px;
+  height: 5px;
+}
+
+.itemsFromDb:hover .cardSideB::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.itemsFromDb:hover .cardSideB::-webkit-scrollbar-thumb {
+  background-color: #67616e;
 }
 
 .itemsFromDb:hover .cardSideA {

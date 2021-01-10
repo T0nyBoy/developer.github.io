@@ -121,12 +121,24 @@ li{
 
 .forText{
     overflow-y: scroll;
-    scrollbar-width: none;
+    scrollbar-width: thin;
+    scrollbar-color: color(third-light) rgba(0, 0, 0, 0);
+    scrollbar-arrow-color: none;
+
 }
 
 // purelly for Chrome
 .forText::-webkit-scrollbar {
-    display: none;
+    width: 5px;
+    height: 5px;
+}
+
+.forText::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.forText::-webkit-scrollbar-thumb {
+    background-color: color(third-light);
 }
 
 .headerContent{
