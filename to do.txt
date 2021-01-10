@@ -1,5 +1,6 @@
 1. about this site content and page create
 2. what i do content
 3. blog content
+4. fix pagination to blogs
 7. clear script of every page and let only whats needed
 8. update content

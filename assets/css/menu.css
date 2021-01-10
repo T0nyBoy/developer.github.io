@@ -58,10 +58,17 @@
   border-radius: 12px;
   -webkit-box-shadow: 0 2px 9px 0 #3f403c;
           box-shadow: 0 2px 9px 0 #3f403c;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 0.4s ease-in;
+  transition: -webkit-transform 0.4s ease-in;
+  transition: transform 0.4s ease-in;
+  transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
 }
 
 .menuLogoImage:hover {
-  background-color: #F0DB4F;
+  -webkit-transform: rotateX(720deg);
+          transform: rotateX(720deg);
 }
 
 @media (max-width: 801px) {

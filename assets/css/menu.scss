@@ -88,9 +88,11 @@ $colors: (
     border: 6px solid color(accent);
     border-radius: 12px;
     box-shadow: 0 2px 9px 0 color(accent-light);
+    transform: rotate(0deg);
+    transition: transform 0.4s ease-in;
 
     &:hover{
-        background-color: color(primary);
+        transform: rotateX(720deg);
 
     }
 }
