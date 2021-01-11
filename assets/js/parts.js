@@ -9,7 +9,7 @@ let contactFormHTML = document.querySelector(".contactForm");
 
 // ---------------------------HEAD------------------------------------------------------------------------------------------
 if(head){
-head.innerHTML = 
+head.innerHTML += 
 `
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WZYHRMN9GV"></script>
@@ -23,24 +23,24 @@ head.innerHTML =
 <!-- -------------------------------------------- -->
 
 
-<meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Tony dev</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/assets/css/menu.css">
-        <link rel="stylesheet" href="/assets/css/main.css">
-        <link rel="stylesheet" href="/assets/css/footerHome.css">
-        <link rel="stylesheet" href="/assets/css/footer.css">
-        <link rel="stylesheet" href="/assets/css/modal.css">
-        <link rel="stylesheet" href="/assets/css/contactForm.css">
-        <link rel="stylesheet" href="/assets/css/blog.css">
-        <link rel="stylesheet" href="/assets/css/portfolio.css">
-        <link rel="stylesheet" href="/assets/css/about.css">
-        <link rel="stylesheet" href="/assets/css/aboutthissite.css">
-        <link rel="stylesheet" href="/assets/css/slider.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-        <link rel="icon" href="/assets/photos/nodus_logo_small_white.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tony dev</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/menu.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/footerHome.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/modal.css">
+    <link rel="stylesheet" href="/assets/css/contactForm.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/portfolio.css">
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="/assets/css/aboutthissite.css">
+    <link rel="stylesheet" href="/assets/css/slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="icon" href="/assets/photos/nodus_logo_small_white.png">
 `
 }
 // ---------------------------------------------------------------------------------------------------------------------------
