@@ -83,7 +83,7 @@ function mainDisplay(page=1,theArray){
             //if we use pagination list to display we have to zero the tableContent inner HTML
             // otherwise the data will stack one above the other
         } else{
-            page=1;
+            page=page;
             tabletContent.innerHTML = '';
         }
         
