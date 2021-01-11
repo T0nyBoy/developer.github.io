@@ -2,6 +2,5 @@
 2. what i do content
 3. menu bar add drop down the what i do ids and the abouthis site 
 3. blog content
-4. fix pagination to blogsthat changes colour 
 7. clear script of every page and let only whats needed
 8. update content
