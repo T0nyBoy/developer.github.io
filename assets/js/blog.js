@@ -77,16 +77,25 @@ function mainDisplay(page=1,theArray){
 
     // INTERACT WITH PAGINATION NUMBERING
     forPagination.addEventListener("click", e=>{
-        page = e.target.textContent*1; //page*1 to make it number
-        tabletContent.innerHTML = ''; 
-        //if we use pagination list to display we have to zero the tableContent inner HTML
-        // otherwise the data will stack one above the other
+        if(e.target.classList[0]!="forPagination"){
+            page = e.target.textContent*1; //page*1 to make it number
+            tabletContent.innerHTML = ''; 
+            //if we use pagination list to display we have to zero the tableContent inner HTML
+            // otherwise the data will stack one above the other
+        } else{
+            page=1;
+            tabletContent.innerHTML = '';
+        }
+        
 
         let pageNumber = document.querySelectorAll(".pageNumber");
         for(i=0;i<pageNumber.length;i++){
             pageNumber[i].classList.remove("pageNumberActive");
         }
-        e.target.classList.add("pageNumberActive");
+
+        if(e.target.classList[0]!="forPagination"){
+            e.target.classList.add("pageNumberActive")
+        };
 
         // i starts from previous page set of items, if currentpage=1 then previous=0, i=0
         for(i=(page-1)*itemsDisplayPerPage;i<page*itemsDisplayPerPage;i++){

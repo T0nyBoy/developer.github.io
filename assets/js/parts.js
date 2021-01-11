@@ -11,8 +11,6 @@ let contactFormHTML = document.querySelector(".contactForm");
 if(head){
 head.innerHTML += 
 `
-
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tony dev</title>
