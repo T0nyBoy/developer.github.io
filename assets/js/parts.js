@@ -11,6 +11,17 @@ let contactFormHTML = document.querySelector(".contactForm");
 if(head){
 head.innerHTML += 
 `
+<!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WZYHRMN9GV"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-WZYHRMN9GV');
+        </script>
+        <!-- -------------------------------------------- -->
+        
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tony dev</title>
