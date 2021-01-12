@@ -153,8 +153,6 @@ but for bigger screens we want a transition to be aaplied */
     top: 3.2em;
     background-color: color(accent);
     box-sizing: content-box;
-    box-shadow: 0px 2px 8px rgb(66, 66, 66);
-    border-radius: 0 0 0.5em 0.5em;
 
     transform: scaleY(0);
     opacity: 0;
@@ -172,10 +170,8 @@ but for bigger screens we want a transition to be aaplied */
         list-style-type: none;
         position: absolute;
         top: 3.2em;
-        background-color:  color(accent);
+        background-color:  color(third);
         box-sizing: content-box;
-        box-shadow: 0px 2px 8px rgb(66, 66, 66);
-        border-radius: 0 0 0.5em 0.5em;
 
         transform: scaleY(1);
         opacity: 1;
@@ -187,15 +183,11 @@ but for bigger screens we want a transition to be aaplied */
 .submenuItem{
     padding: 0.3em 0.3em;
     margin: 0 0.3em;
-    border-radius: 0.5em;
-
     transition: background-color 0.5s;
 }
 
 .submenuItem:hover{
-    background-color:#686a64;
-    box-shadow: 2px 2px 8px rgb(66, 66, 66);
-    border-radius: 0.5em;
+    background-color:color(third-light);
 }
 
 .logo{
@@ -255,13 +247,16 @@ but for bigger screens we want a transition to be aaplied */
         align-items: flex-start;
     }
 
+  
+
     .forSubMenuIcon::after{
         font-family: "Font Awesome 5 Free";
         content: "\f0dd";
         display: inline-block;
-        padding: 0 0.4em;        
-        font-size: 1em;
+        padding: 0 1em;        
+        font-size: 1.3em;
         font-weight: 900;
+        width: 50px;
     }
     
     .submenuContainer{

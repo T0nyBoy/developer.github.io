@@ -1,6 +1,6 @@
 let burger = document.querySelector(".forSmallScreenMenuIcon");
 let menuItem = document.querySelectorAll(".menuItem");
-let forSubmenu = document.querySelector(".forSubmenu");
+let forSubMenuIcon = document.querySelector(".forSubMenuIcon");
 let submenuContainer = document.querySelector(".submenuContainer");
 let mainBody=document.querySelector(".mainBody");
 let menuBar = document.querySelector(".menu");
@@ -24,10 +24,10 @@ burger.addEventListener("click", ()=>{
 };
 
 
-//make submenu appear
-// forSubmenu.addEventListener("click", ()=>{
-//     submenuContainer.classList.toggle("subMenuContainerAppear");
-// });
+// make submenu appear
+forSubMenuIcon.addEventListener("click", ()=>{
+    submenuContainer.classList.toggle("subMenuContainerAppear");
+});
         
 
 //Make scroll bar change class on scroll below 4.2em

@@ -43,13 +43,16 @@ $colors: (
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3em;
+    margin-top: 5em;
     margin-bottom: 5em;
     padding: 0;
     height: 100%;
-    width: 90%;
+    width: 85%;
     background-image: linear-gradient(45deg, #cacaca 25%, #f0f0f0 25%, #f0f0f0 50%, #cacaca 50%, #cacaca 75%, #f0f0f0 75%, #f0f0f0 100%);
     background-size: 56.57px 56.57px;
+    
+    box-shadow: 2em 2em 0px color(third-light),
+    -2em -2em 0px color(third);
 }
 
 .containerDynamic{
@@ -271,6 +274,7 @@ p{
         margin-left: 0;
         margin-right: 0;
         width: 100%;
+        box-shadow: none;
     }
     .itemsFromDb{
         width: 100%;

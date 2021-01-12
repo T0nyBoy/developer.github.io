@@ -42,7 +42,15 @@ menu.innerHTML =
             <div class="menuItem logo"><a href="/index.html"><img src="/assets/photos/nodus_logo_small.png" class="menuLogoImage"></a></div>
             <div class="menuItem button"><a href="/index.html">Home</a></div>
             <div class="menuItem button"><a href="/blog.html">Blog</a></div>
-            <div class="menuItem button"><a href="/portfolio.html">What I Do</a></div>
+            <div class="menuItem button forSubmenuParent"><span><a href="/portfolio.html">What I Do</a><span class="forSubMenuIcon"></span></span>
+              <div class="submenuContainer">
+                      <div class="submenuItem"><a href="/portfolio.html#webApps">Web Apps</a></div>
+                      <div class="submenuItem"><a href="/portfolio.html#customWebsites">Custom Sites</a></div>
+                      <div class="submenuItem"> <a href="/portfolio.html#eShops">eShops</a></div>
+                      <div class="submenuItem"><a href="/portfolio.html#wordpress">Wordpress Sites</a></div>
+                      <div class="submenuItem"><a href="/aboutthissite.html">About this site</a></div>
+              </div>
+            </div>
             <div class="menuItem button"><a href="/about.html">About</a></div>
             <div class="menuItem button getInTouch"><a href="#">Get in touch</a></div>
 `

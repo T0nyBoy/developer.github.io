@@ -1,6 +1,3 @@
 1. about this site content and page create
-2. what i do content
-3. menu bar add drop down the what i do ids and the abouthis site 
-3. blog content
-7. clear script of every page and let only whats needed
+2. what i do content3. blog content
 8. update content
