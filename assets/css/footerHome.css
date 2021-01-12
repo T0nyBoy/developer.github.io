@@ -29,6 +29,11 @@
   text-decoration: none;
 }
 
+.footerItemHome a:hover {
+  color: #fcfcfc;
+  text-shadow: 0px 0px 4px #fcfcfc;
+}
+
 @media (max-width: 800px) {
   .footerItemHome a {
     color: #cacaca;

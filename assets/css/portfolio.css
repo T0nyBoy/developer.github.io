@@ -68,10 +68,10 @@
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #cacaca;
+  background-color: #fcfcfc;
   color: #323330;
-  -webkit-box-shadow: 2em 2em 0px #67616e, -2em -2em 0px #5a5560, -4em 4em 0px #4d4952;
-          box-shadow: 2em 2em 0px #67616e, -2em -2em 0px #5a5560, -4em 4em 0px #4d4952;
+  -webkit-box-shadow: 2em 2em 0px #3fa5fb, -2em -2em 0px #2699FB, -4em 4em 0px #0d8dfb;
+          box-shadow: 2em 2em 0px #3fa5fb, -2em -2em 0px #2699FB, -4em 4em 0px #0d8dfb;
 }
 
 .mainElement {
@@ -109,7 +109,7 @@ li {
 .forText {
   overflow-y: scroll;
   scrollbar-width: thin;
-  scrollbar-color: #67616e rgba(0, 0, 0, 0);
+  scrollbar-color: #3fa5fb rgba(0, 0, 0, 0);
   scrollbar-arrow-color: none;
 }
 
@@ -136,7 +136,7 @@ li {
 }
 
 .forText::-webkit-scrollbar-thumb {
-  background-color: #67616e;
+  background-color: #3fa5fb;
 }
 
 .headerContent {

@@ -2,17 +2,17 @@
 $colors: (
     primary: #F0DB4F,
     secondary: #46344E,
-    third: #5a5560,
+    third: #2699FB,
     accent:  #323330,
-    bright: #f0f0f0,
+    bright: #fcfcfc,
     //light function (normal css funciton, lightens the color by the % amount)
     secondary-light: lighten(#46344E, 5%),
     secondary-dark: darken(#46344E, 5%),
-    third-light: lighten(#5a5560, 5%),
-    third-dark: darken(#5a5560, 5%),
+    third-light: lighten(#2699FB, 5%),
+    third-dark: darken(#2699FB, 5%),
     accent-light: lighten(#323330, 5%),
     accent-dark: darken(#323330, 5%),
-    bright-dark: darken(#f0f0f0,15%),
+    bright-dark: darken(#fcfcfc,15%),
     
     redish: #fb4848,
     redish-trans: #fb4848a5,
@@ -45,7 +45,7 @@ $colors: (
     border-radius: 35px;
     box-sizing: border-box;
     
-    background: #f0f0f053;
+    background: #fcfcfc34;
     backdrop-filter: blur(8px);
     
 
@@ -186,7 +186,7 @@ $colors: (
 
                &:hover{
                    background-color: color(third-light);
-                   color: color(primary);
+                   color: color(bright);
                }
                &:active{
                 background-color: color(third-light);

@@ -21,10 +21,10 @@
           justify-content: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #cacaca;
+  background-color: #fcfcfc;
   color: #323330;
-  -webkit-box-shadow: 2em 2em 0px #67616e, -2em -2em 0px #5a5560, -4em 4em 0px #4d4952;
-          box-shadow: 2em 2em 0px #67616e, -2em -2em 0px #5a5560, -4em 4em 0px #4d4952;
+  -webkit-box-shadow: 2em 2em 0px #3fa5fb, -2em -2em 0px #2699FB, -4em 4em 0px #0d8dfb;
+          box-shadow: 2em 2em 0px #3fa5fb, -2em -2em 0px #2699FB, -4em 4em 0px #0d8dfb;
 }
 
 .aboutContainer p {
@@ -43,9 +43,9 @@
   margin-top: 1.5em;
   margin-bottom: 1em;
   padding: 1em;
-  border: 8px solid #323330;
+  border: 8px solid #3fa5fb;
   border-radius: 1.7em;
-  background-color: #f0f0f0;
+  background-color: #fcfcfc;
 }
 
 @media (max-width: 600px) {

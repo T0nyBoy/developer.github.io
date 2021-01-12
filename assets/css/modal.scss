@@ -7,14 +7,14 @@
 $colors: (
     primary: #F0DB4F,
     secondary: #46344E,
-    third: #5a5560,
+    third: #2699FB,
     accent:  #323330,
-    bright: #f0f0f0,
+    bright: #fcfcfc,
     //light function (normal css funciton, lightens the color by the % amount)
     secondary-light: lighten(#46344E, 5%),
     secondary-dark: darken(#46344E, 5%),
-    third-light: lighten(#5a5560, 5%),
-    third-dark: darken(#5a5560, 5%),
+    third-light: lighten(#2699FB, 5%),
+    third-dark: darken(#2699FB, 5%),
     accent-light: lighten(#323330, 5%),
     accent-dark: darken(#323330, 5%),
     
@@ -96,7 +96,7 @@ $colors: (
     position: relative;
     top: 5vh;
     right: 25vw;
-    color: color(accent-dark);
+    color: color(third-dark);
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -106,7 +106,8 @@ $colors: (
   
   .close:hover,
   .close:focus, .closeContactForm:hover, .closeContactForm:focus {
-    color: #000;
+    color: color(bright);
+    text-shadow: 0px 0px 4px color(bright);
     text-decoration: none;
     cursor: pointer;
   }

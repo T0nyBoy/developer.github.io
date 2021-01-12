@@ -12,7 +12,7 @@
   border-radius: 35px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #f0f0f053;
+  background: #fcfcfc34;
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
 }
@@ -82,7 +82,7 @@
 }
 
 .mainBox .leftColumn .otherContactWays span {
-  color: #f0f0f0;
+  color: #fcfcfc;
   margin: 0 0.2em;
   font-size: 1.5em;
 }
@@ -108,7 +108,7 @@
 }
 
 .mainBox .mainContactFrame h1 {
-  color: #f0f0f0;
+  color: #fcfcfc;
   font-weight: 900;
   font-size: 24px;
 }
@@ -142,8 +142,8 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: none;
-  -webkit-box-shadow: 3px 3px 8px #323330, -3px -3px 8px #f0f0f0;
-          box-shadow: 3px 3px 8px #323330, -3px -3px 8px #f0f0f0;
+  -webkit-box-shadow: 3px 3px 8px #323330, -3px -3px 8px #fcfcfc;
+          box-shadow: 3px 3px 8px #323330, -3px -3px 8px #fcfcfc;
 }
 
 .mainBox .mainContactFrame #contactForm #userName:focus, .mainBox .mainContactFrame #contactForm #email:focus, .mainBox .mainContactFrame #contactForm #phone:focus {
@@ -164,8 +164,8 @@
           box-sizing: border-box;
   resize: none;
   text-overflow: scroll;
-  -webkit-box-shadow: 3px 3px 8px #323330, -3px -3px 8px #f0f0f0;
-          box-shadow: 3px 3px 8px #323330, -3px -3px 8px #f0f0f0;
+  -webkit-box-shadow: 3px 3px 8px #323330, -3px -3px 8px #fcfcfc;
+          box-shadow: 3px 3px 8px #323330, -3px -3px 8px #fcfcfc;
 }
 
 .mainBox .mainContactFrame #contactForm #message:focus {
@@ -186,15 +186,15 @@
   width: 180px;
   height: 2em;
   background-color: whitesmoke;
-  color: #5a5560;
+  color: #2699FB;
   border-radius: 8px;
   border: none;
   font-size: 1.1em;
   font-weight: bold;
   -webkit-transition: background-color 120ms ease-in;
   transition: background-color 120ms ease-in;
-  -webkit-box-shadow: 3px 3px 8px #323330, -3px -3px 8px #f0f0f0;
-          box-shadow: 3px 3px 8px #323330, -3px -3px 8px #f0f0f0;
+  -webkit-box-shadow: 3px 3px 8px #323330, -3px -3px 8px #fcfcfc;
+          box-shadow: 3px 3px 8px #323330, -3px -3px 8px #fcfcfc;
 }
 
 .mainBox .mainContactFrame #contactForm .submitBtn:focus {
@@ -203,12 +203,12 @@
 }
 
 .mainBox .mainContactFrame #contactForm .submitBtn:hover {
-  background-color: #67616e;
-  color: #F0DB4F;
+  background-color: #3fa5fb;
+  color: #fcfcfc;
 }
 
 .mainBox .mainContactFrame #contactForm .submitBtn:active {
-  background-color: #67616e;
+  background-color: #3fa5fb;
 }
 
 .mainBox .mainContactFrame #contactForm input, .mainBox .mainContactFrame #contactForm #submitBtn, .mainBox .mainContactFrame #contactForm #message {

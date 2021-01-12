@@ -67,7 +67,7 @@
   position: relative;
   top: 5vh;
   right: 25vw;
-  color: #252624;
+  color: #0d8dfb;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -76,7 +76,8 @@
 
 .close:hover,
 .close:focus, .closeContactForm:hover, .closeContactForm:focus {
-  color: #000;
+  color: #fcfcfc;
+  text-shadow: 0px 0px 4px #fcfcfc;
   text-decoration: none;
   cursor: pointer;
 }

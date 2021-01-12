@@ -2,17 +2,17 @@
 $colors: (
     primary: #F0DB4F,
     secondary: #46344E,
-    third: #5a5560,
+    third: #2699FB,
     accent:  #323330,
-    bright: #f0f0f0,
+    bright: #fcfcfc,
     //light function (normal css funciton, lightens the color by the % amount)
     secondary-light: lighten(#46344E, 5%),
     secondary-dark: darken(#46344E, 5%),
-    third-light: lighten(#5a5560, 5%),
-    third-dark: darken(#5a5560, 5%),
+    third-light: lighten(#2699FB, 5%),
+    third-dark: darken(#2699FB, 5%),
     accent-light: lighten(#323330, 5%),
     accent-dark: darken(#323330, 5%),
-    bright-dark: darken(#f0f0f0,15%),
+    bright-dark: darken(#fcfcfc,15%),
     
     redish: #fb4848,
     redish-trans: #fb4848ce,
@@ -85,7 +85,7 @@ $colors: (
     color: color(accent);
     background-color: color(bright);
     padding: 0.2em;
-    border: 6px solid color(accent);
+    border: 6px solid color(third-light);
     border-radius: 12px;
     box-shadow: 0 2px 9px 0 color(accent-light);
     transform: rotate(0deg);
@@ -130,7 +130,9 @@ $colors: (
 
 .menuItem:hover a{
     text-decoration: none;
-    color: color(bright-dark)
+    color: color(bright);
+    text-shadow: 0px 0px 4px color(bright);
+
 }
 
 .logo:hover{
@@ -252,11 +254,17 @@ but for bigger screens we want a transition to be aaplied */
     .forSubMenuIcon::after{
         font-family: "Font Awesome 5 Free";
         content: "\f0dd";
+        color: color(accent);
         display: inline-block;
         padding: 0 1em;        
         font-size: 1.3em;
         font-weight: 900;
         width: 50px;
+
+        &:hover{
+            color: color(bright);
+            text-shadow: 0px 0px 4px color(bright);
+        }
     }
     
     .submenuContainer{
