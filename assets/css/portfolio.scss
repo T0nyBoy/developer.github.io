@@ -12,6 +12,7 @@ $colors: (
     third-dark: darken(#5a5560, 5%),
     accent-light: lighten(#323330, 5%),
     accent-dark: darken(#323330, 5%),
+    bright-dark: darken(#f0f0f0,15%),
     
     redish: #fb4848,
     redish-trans: #fb4848ce,
@@ -127,6 +128,15 @@ li{
 
 }
 
+.forPhoto{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+}
+
 // purelly for Chrome
 .forText::-webkit-scrollbar {
     width: 5px;
@@ -150,8 +160,8 @@ li{
     margin-bottom: auto;
     width: auto;
     height: auto;
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 80%;
+    max-height: 80%;
 }
 
 .mainElement>.mainParagraph{
@@ -253,7 +263,6 @@ order: 1;
 
     .forPhoto{
         display: flex;
-        // width: 90%;
         align-content: center;
         justify-content: center;
     }
