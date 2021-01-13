@@ -22,7 +22,7 @@ $colors: (
     greenish-trans: #48a148a5,
     greenish-light: lighten(#48a148, 5%),
     greenish-dark: darken(#48a148, 5%),
-    blueish: #4848fb,
+    blueish: #84c6ffa3,
     blueish-trans: #4848fba5,
     blueish-light: lighten(#4848fb, 5%),
     blueish-dark: darken(#4848fb, 5%)
@@ -48,7 +48,7 @@ $colors: (
     padding: 0;
     height: 100%;
     width: 85%;
-    // background-image: linear-gradient(45deg, #cacaca 25%, #f0f0f0 25%, #f0f0f0 50%, #cacaca 50%, #cacaca 75%, #f0f0f0 75%, #f0f0f0 100%);
+    background-image: linear-gradient(45deg, #84c6ffa3 25%, #fcfcfc 25%, #fcfcfc 50%, #84c6ffa3 50%, #84c6ffa3 75%, #fcfcfc 75%, #fcfcfc 100%);
     background-size: 56.57px 56.57px;
     background-color: color(bright);
     

@@ -15,6 +15,7 @@
   padding: 0;
   height: 100%;
   width: 85%;
+  background-image: linear-gradient(45deg, #84c6ffa3 25%, #fcfcfc 25%, #fcfcfc 50%, #84c6ffa3 50%, #84c6ffa3 75%, #fcfcfc 75%, #fcfcfc 100%);
   background-size: 56.57px 56.57px;
   background-color: #fcfcfc;
   -webkit-box-shadow: 2em 2em 0px #3fa5fb, -2em -2em 0px #0d8dfb;
