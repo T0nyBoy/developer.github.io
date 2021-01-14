@@ -120,7 +120,7 @@ contactFormHTML.innerHTML =
     
     
                 <div class="mainContactFrame">
-                <span class="closeContactForm"><i class="fas fa-window-close"></i></span>
+                <div class="closeContactForm"><i class="fas fa-window-close"></i></div>
                     <h1>Send a message</h1>
                     <form id="contactForm" method="" data-email="from_email@example.com"
                     action="">

@@ -1,6 +1,11 @@
+.contactForm {
+  padding-top: 0;
+  /* Location of contact form box */
+}
+
 .mainBox {
-  width: 520px;
-  height: 520px;
+  width: 540px;
+  height: 540px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,6 +20,12 @@
   background: #fcfcfc34;
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .mainBox .leftColumn {
@@ -105,6 +116,30 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.mainBox .mainContactFrame .closeContactForm {
+  position: relative;
+  top: 5%;
+  right: 120%;
+  color: #fcfcfc;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 200;
+}
+
+@media (max-width: 800px) {
+  .mainBox .mainContactFrame .closeContactForm {
+    top: 5%;
+    right: -40%;
+  }
+}
+
+.mainBox .mainContactFrame .closeContactForm:hover, .mainBox .mainContactFrame .closeContactForm:focus {
+  text-shadow: 0px 0px 4px #fcfcfc;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .mainBox .mainContactFrame h1 {
@@ -220,6 +255,7 @@
     width: 90%;
     max-width: 350px;
     height: 80vh;
+    max-height: 550px;
     margin-top: 0;
     display: -webkit-box;
     display: -ms-flexbox;

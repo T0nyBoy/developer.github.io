@@ -35,11 +35,14 @@ $colors: (
     // we can call color(primary) for example
 }
 
+.contactForm{
+    padding-top: 0; /* Location of contact form box */ 
+  }
 
 
 .mainBox{
-    width: 520px;
-    height: 520px;
+    width: 540px;
+    height: 540px;
     display: flex;
     flex-direction: row;
     margin: 1em auto 2em auto;
@@ -48,6 +51,12 @@ $colors: (
     
     background: #fcfcfc34;
     backdrop-filter: blur(8px);
+
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
     
 
     .leftColumn{
@@ -102,7 +111,32 @@ $colors: (
         flex: 1 1 55%;
         width: 100%;
         justify-content: center;
-        align-items: center;        
+        align-items: center;      
+        
+        .closeContactForm{
+            position: relative;
+            top: 5%;
+            right: 120%;
+            color: color(bright);
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            z-index: 200;
+          }
+        
+          @media(max-width:800px){
+            .closeContactForm{
+              top: 5%;
+            right: -40%;
+            }
+          }
+
+          .closeContactForm:hover, .closeContactForm:focus {
+            text-shadow: 0px 0px 4px color(bright);
+            text-decoration: none;
+            cursor: pointer;
+          }
+
 
         h1{
             color: color(bright);
@@ -208,6 +242,7 @@ $colors: (
             width: 90%;
             max-width: 350px;
             height: 80vh;
+            max-height: 550px;
             margin-top: 0;
             display: flex;
             flex-direction: column;
