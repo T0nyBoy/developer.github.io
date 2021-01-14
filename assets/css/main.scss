@@ -195,8 +195,8 @@ body{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 80%;
-        min-width: 360px;
+        width: 70%;
+        min-width: 260px;
         height: 100%;
         margin-bottom: 2em;
         transform: rotate(0);
@@ -252,5 +252,6 @@ body{
 
     .service1, .service2, .service3{
         color: color(accent-light);
+        border-radius: 25px;
     }
 }

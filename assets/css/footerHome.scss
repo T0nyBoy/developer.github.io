@@ -54,7 +54,7 @@ $colors: (
     align-items: center;
     color: color(accent);
 
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 .footerItemHome span{
@@ -73,7 +73,18 @@ $colors: (
 }
 
 @media(max-width:800px){
+
+    .footerContainerHome{
+        padding: 0.5em 1em;
+    }
+
+
+    .footerItemHome{
+        font-size: 5vw;
+    }
+    
     .footerItemHome  a{
         color: color(bright-dark);
     }
 }
+

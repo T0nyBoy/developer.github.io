@@ -105,7 +105,7 @@ footerHome.innerHTML =
 if(contactFormHTML){
 contactFormHTML.innerHTML = 
 `
-<span class="closeContactForm"><i class="fas fa-window-close"></i></span>
+<!-- <span class="closeContactForm"><i class="fas fa-window-close"></i></span>  -->
             <div class="mainBox">
                 <div class="leftColumn">
                     <div class="logoBox">
@@ -120,6 +120,7 @@ contactFormHTML.innerHTML =
     
     
                 <div class="mainContactFrame">
+                <span class="closeContactForm"><i class="fas fa-window-close"></i></span>
                     <h1>Send a message</h1>
                     <form id="contactForm" method="" data-email="from_email@example.com"
                     action="">

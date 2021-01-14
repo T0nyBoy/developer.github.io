@@ -96,6 +96,7 @@
             justify-content: center;
     -webkit-clip-path: none;
             clip-path: none;
+    font-size: 5vw;
   }
   .higherFooterItem {
     display: none;

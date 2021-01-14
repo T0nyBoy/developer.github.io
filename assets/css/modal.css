@@ -65,13 +65,20 @@
 
 .closeContactForm {
   position: relative;
-  top: 5vh;
-  right: 25vw;
-  color: #0d8dfb;
+  top: 5%;
+  right: 120%;
+  color: #323330;
   float: right;
   font-size: 28px;
   font-weight: bold;
   z-index: 200;
+}
+
+@media (max-width: 800px) {
+  .closeContactForm {
+    top: 5%;
+    right: -40%;
+  }
 }
 
 .close:hover,

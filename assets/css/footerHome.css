@@ -17,7 +17,7 @@
       -ms-flex-align: center;
           align-items: center;
   color: #323330;
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 .footerItemHome span {
@@ -35,6 +35,12 @@
 }
 
 @media (max-width: 800px) {
+  .footerContainerHome {
+    padding: 0.5em 1em;
+  }
+  .footerItemHome {
+    font-size: 5vw;
+  }
   .footerItemHome a {
     color: #cacaca;
   }

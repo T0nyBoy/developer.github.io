@@ -213,8 +213,8 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 80%;
-    min-width: 360px;
+    width: 70%;
+    min-width: 260px;
     height: 100%;
     margin-bottom: 2em;
     -webkit-transform: rotate(0);
@@ -276,6 +276,7 @@ body {
   }
   .service1, .service2, .service3 {
     color: #3f403c;
+    border-radius: 25px;
   }
 }
 /*# sourceMappingURL=main.css.map */
