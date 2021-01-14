@@ -1,0 +1,314 @@
+// Setting up the colours
+$colors: (
+    primary: #F0DB4F,
+    secondary: #46344E,
+    third: #2699FB,
+    accent:  #323330,
+    bright: #fcfcfc,
+    //light function (normal css funciton, lightens the color by the % amount)
+    secondary-light: lighten(#46344E, 5%),
+    secondary-dark: darken(#46344E, 5%),
+    third-light: lighten(#2699FB, 5%),
+    third-dark: darken(#2699FB, 5%),
+    accent-light: lighten(#323330, 5%),
+    accent-dark: darken(#323330, 5%),
+    bright-dark: darken(#fcfcfc,15%),
+    
+    redish: #fb4848,
+    redish-trans: #fb4848ce,
+    redish-light: lighten(#fb4848, 5%),
+    redish-dark: darken(#fb4848, 5%),
+    greenish: #48a148,
+    greenish-trans: #48a148ce,
+    greenish-light: lighten(#48a148, 5%),
+    greenish-dark: darken(#48a148, 5%),
+    blueish: #4848fb,
+    blueish-trans: #4848fbce,
+    blueish-light: lighten(#4848fb, 5%),
+    blueish-dark: darken(#4848fb, 5%)    
+);
+
+// color function
+@function color($colorName){
+    @return map-get($colors, $colorName)
+    // ---------------
+    // so whenever we call a call a color we dont need to call map-get($colors...)
+    // we can call color(primary) for example
+}
+
+
+.portfolioNavbar{
+    display:flex;
+    position: sticky;
+    margin-top: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0.6em;
+    flex-direction: row;
+    width: 50vw;
+    font-size: 0.9em;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.portfolioNavbarItem{
+    width: auto;
+    height: 1.9em;
+    box-sizing: border-box;
+}
+
+.portfolioNavbarItem:hover{
+    cursor: pointer;
+}
+
+
+.portfolioNavbarItem::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: color(accent-dark);
+    transition: width .3s;
+}
+
+.portfolioNavbarItem:hover::after {
+    width: 100%;
+}
+
+
+.mainBodyContainer{
+    display: flex;
+    flex-direction: row;
+    width: 75vw;
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-bottom: 8em;
+    padding: 1em;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    width: 80vw;
+    min-width: 300px;
+    height: auto;
+    box-sizing: border-box;
+    background-color: color(bright);
+    color: color(accent);
+    box-shadow: 2em 2em 0px color(third-light),
+    -2em -2em 0px color(third),
+    -4em 4em 0px color(third-dark);
+}
+
+.mainElement{
+    display: flex;
+    flex-flow: column;
+    flex: 1 1 30vw;
+    // border: 2px solid black;
+    padding: 0.5em;
+    margin-top: 1.5em;
+    height: 30vw; 
+    justify-content: flex-start; 
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+ul span{
+    color: color(blueish-light);
+}
+
+li{
+    color: inherit;
+    list-style: none;
+}
+
+.forText{
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: color(third-light) rgba(0, 0, 0, 0);
+    scrollbar-arrow-color: none;
+
+}
+
+.forPhoto{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+}
+
+// purelly for Chrome
+.forText::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.forText::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.forText::-webkit-scrollbar-thumb {
+    background-color: color(third-light);
+}
+
+.headerContent{
+    font-size: 2em;
+}
+
+.portfolioImage{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: auto;
+    height: auto;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.mainElement>.mainParagraph{
+    text-align: justify;
+}
+
+.mainElement>.portfolioImage{
+    transform: scale(1);
+    transition: transform 500ms ease-in;
+}
+
+.mainElement>.portfolioImage:hover{
+    transform: scale(1.35);
+}
+
+/* Element order */
+.element1{
+order: 1;
+}
+.element2{
+    order: 2;
+}
+.element3{
+    order: 4;
+}
+.element4{
+    order: 3;
+}
+.element5{
+    order: 5;
+}
+.element6{
+    order: 5;
+}
+.element7{
+    order: 8;
+}
+.element8{
+    order: 7;
+}
+.element9{
+    order: 9;
+}
+.element10{
+    order: 10;
+}
+
+.element11{
+    order: 12;
+}
+.element12{
+    order: 11;
+}
+.element13{
+    order: 13;
+}
+.element14{
+    order: 14;
+}
+
+/* -------------------------------------- */
+/* FOR SMALLER SCREENS */
+/* -------------------------------------- */
+
+
+@media(max-width: 801px){
+
+    .portfolioNavbarItem{
+        display: none;
+    }
+
+    .mainBodyContainer{
+        display: flex;
+        flex-direction: column;
+        margin-top: -4em;
+        margin-bottom: 4em;
+        padding: 1em;
+        width: 100vw;
+        box-shadow: none;
+    }
+
+    .mainElement{
+        align-self: center;
+    }
+
+    .mainElement:nth-child(2n){
+        display: flex;
+        overflow: scroll;
+        justify-content: flex-start;
+
+        border-bottom: 1px solid rgba(150, 170, 170, 0.583);
+        margin-bottom: 1em;
+    }
+
+
+    .headerContent{
+        padding-bottom: 0.5em;
+    }
+
+    .forPhoto{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    /* Element order */
+.element1{
+    order: 1;
+    }
+    .element2{
+        order: 2;
+    }
+    .element3{
+        order: 3;
+    }
+    .element4{
+        order: 4;
+    }
+    .element5{
+        order: 5;
+    }
+    .element6{
+        order: 6;
+    }
+    .element7{
+        order: 7;
+    }
+    .element8{
+        order: 8;
+    }
+    .element9{
+        order: 9;
+    }
+    .element10{
+        order: 10;
+    }
+    .element11{
+        order: 11;
+    }
+    .element12{
+        order: 12;
+    }
+    .element13{
+        order: 13;
+    }
+    .element14{
+        order: 14;
+    }
+
+}

@@ -1,6 +1,8 @@
-If you click the navbar button while you are at the top of the page the menu pushes the rest of the page below it. Scrolling down while the menu is open will then push the page behind it.
+If you click the navbar button while you are at the top of the page the menu pushes the rest of the page below it. 
+Scrolling down while the menu is open will then push the page behind it. - wont change
 
-In the footer, the text overflows out of the element. I'm not sure if the lighter-blue line on top is a just a border but I would just remove it
+In the footer, the text overflows out of the element. 
+I'm not sure if the lighter-blue line on top is a just a border but I would just remove it - wont change
 
 What I do: I feel like the logos of each section take too much space within the element they're in. 
 It looks like half? 
