@@ -7,8 +7,6 @@ It looks like half?
 Might be a bit excessive and it makes the text harder to read. 
 Potential clients will be more interested in the text than the logo, so I would adjust that
 
-X at the top of contact form should be a little more to the right
-
 on the blog page it takes a few clicks for me to open the entry (although my phone is pretty crappy so it might be just on my end).
 
 the social media icons and text on the bottom of the home page are a little off. 
