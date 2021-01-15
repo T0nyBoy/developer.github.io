@@ -34,8 +34,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 350px;
-  height: auto;
-  max-height: 480px;
+  height: 520px;
   margin-top: 1em;
   margin-bottom: 1em;
   padding: 0.7em;
@@ -44,8 +43,8 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   background-color: #fcfcfc;
   border: 5px solid rgba(126, 126, 255, 0.483);
   -webkit-box-shadow: 5px 5px 16px #323330;
@@ -73,7 +72,18 @@
 .portfolioImage {
   max-height: 150px;
   max-width: 100%;
-  margin: auto;
+  margin: 0px auto;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 2s ease-in;
+  transition: -webkit-transform 2s ease-in;
+  transition: transform 2s ease-in;
+  transition: transform 2s ease-in, -webkit-transform 2s ease-in;
+}
+
+.portfolioImage:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
 .headerContent {

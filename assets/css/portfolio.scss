@@ -61,14 +61,14 @@ $colors: (
     flex-direction: column;
     width: 350px;
     
-    height: auto;
-    max-height: 480px;
+    // height: auto;
+    height: 520px;
     margin-top: 1em;
     margin-bottom: 1em;
     padding: 0.7em;
     box-sizing: border-box;
     justify-content: flex-start;
-    align-content: center;
+    align-content: flex-start;
     
     background-color: color(bright);
     border: 5px solid rgba(126, 126, 255, 0.483);
@@ -100,10 +100,15 @@ $colors: (
 
 
 .portfolioImage{
-    // width: auto;
     max-height: 150px;
     max-width: 100%;
-    margin: auto;
+    margin: 0px auto;
+    transform: scale(1);
+    transition: transform 2s ease-in;
+
+    &:hover{
+        transform: scale(1.4);
+    }
 }
 
 .headerContent{
@@ -133,14 +138,3 @@ li{
     color: inherit;
     list-style: none;
 }
-
-
-// @media(max-width:800px){
-//     .forPhoto{
-//         // width: 100%;
-//         // height: auto;
-//         // max-width: 100%;
-//         // max-height: 80%;
-        
-//     }
-// }
